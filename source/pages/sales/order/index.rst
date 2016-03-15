@@ -23,7 +23,8 @@ Flow Quotation
 
 Form Quotation :
 
-Diisi gambar form Quotation
+.. image:: /img/order-rfq.png
+
 
 
 Penjelasan Field: 
@@ -66,6 +67,13 @@ Penjelasan Field:
 +---+-----------------------+---------------+------------------------------------------------------------------------------------------+
 |16 | Total                 | Tidak         |Total nilai transaksi                                                                     |
 +---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|17 | Sale Items            | Ya            |List item / produk yang di tawarkan                                                       |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|18 | Revision History      | Tidak         |List Data Revisi yang pernah dilakukan, terisi otomatis pada saat dilakukan revisi pada   |
+|   |                       |               |dokumen                                                                                   |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|19 | Scope Of Work         | Tidak         |Berisi Scope of work baik dari sisi Customer maupun Suprabakti Mandiri                    |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
 
 
 Pada form tersebut terdapat **3 Tab**, yaitu :
@@ -86,7 +94,7 @@ Item yang ditawarkan bisa saja dalam satuan kumulatif seperti SET, LOT, dll.
 
 
 
-.. image:: /img/order-sale-items-detail-form.png
+.. image:: /img/order-sale-items-baru.png
 
 (Gambar Sale Item - Form / Detail)
 
@@ -119,11 +127,15 @@ Field yang ada pada **Sale Item**:
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
 
+
 Material Line
 ^^^^^^^^^^^^^
 
 Material line merupakan data Material yang akan di supply pada suatu order baik material berupa barang maupun barang.
 Pada material line harus di deskripsikan material penyusun / consist of / including material yang akan di berikan kepada customer.
+
+.. image:: /img/order-material-line.png
+(Gambar Material Item pada Quotation)
 
 Contoh : 
 
@@ -161,7 +173,9 @@ Contoh Kasus
 
 -. Membuat penawaran Jasa Include Material
 
-1. Dilkukan Penawaran ke PT. Indocement Persero, Tbk untuk item Super Screw
+1. Dilkukan Penawaran ke PT. Indocement Persero, Tbk untuk item Super Screw 65 BW 1200
+
+
 
 -. Membuat penawaran Penjualan Material include dengan Jasa (Pemasangan/Instalasi)
 -. Membuat penawaran Penjualan Material yang material berasal dari Site
