@@ -11,9 +11,17 @@ SBM Work Order, merupakan modul untuk.....
 
 Flow SBM Work Order
 
-.. image:: /img/quotation.png
+.. image:: /img/Gm50U.jpg
 
-(Penjelasan tentang SBM Work Order di skip)
+1. Flow dimulai dengan user Admin Support yang melakukan proses SO, setelah itu berlanjut ke proses permintaan SPK. Selanjutnya adalah melakukan konfirmasi oleh user yang bersangkutan (Admin Support).
+
+2. Setelah konfirmasi selesai, tahap selanjutnya adalah pengecekan SPK oleh user Admin (HO). Pada tahap ini terdapai 3 (tiga) pilihan yaitu cancel, revisi dan ok. a. Cancel, berarti membatalkan semua proses sebelumnya dan proses berhenti. b. Revisi, berarti proses sebelumnya diarahkan ke proses set Draft untuk ditinjau ulang pada proses permintaan SPK oleh user Admin Support. c. Ok, berarti SPK telah lolos pengecekan dan berlanjut ke proses Validasi dan Approval oleh Supervisor.
+
+3. Apabila sudah di approve oleh supervisor, proses selanjutnya adalah Approval Admin oleh Manager. Pada tahap ini ada 3 (tiga) pilihan yaitu revisi, cancel dan approved. a. Revisi, berarti proses sebelumnya diarahkan ke proses set Draft untuk ditinjau ulang pada proses permintaan SPK oleh user Admin Support. b. Cancel, berarti membatalkan semua proses sebelumnya dan proses berhenti. c. Approved, berarti berlanjut ke proses Resease SPK ke Workshop. Artinya SPK siap dikirim ke workshop.
+
+4. Kemudian adalah proses penerimaan SPK, setelah SPK diterima maka selanjutnya diproses sampai SPK selesai. SPK ini berisi tentang Referensi Order, Pemakaian Material, dll.
+
+5. Jika SPK sudah selesai maka ada pilihan Tagih dan Kirim Output. a. Tagih, berarti proses sebelumnya adalah berupa order jasa dan langsung diarahkan ke Invoicing. b. Kirim Output, berarti proses sebelumnya adalah order barang yang harus melalui proses Delivery Note. Jika proses Delivery Note Selesai baru melakukan penagihan dan langsung ke proses Invoicing.
 
 
 Form SBM Work Order :
