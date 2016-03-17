@@ -135,6 +135,7 @@ Material line merupakan data Material yang akan di supply pada suatu order baik 
 Pada material line harus di deskripsikan material penyusun / consist of / including material yang akan di berikan kepada customer.
 
 .. image:: /img/order-material-line.png
+
 (Gambar Material Item pada Quotation)
 
 Contoh : 
@@ -158,13 +159,38 @@ Field yang ada pada **Material Line** :
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
 
-Sale Item berisikan detail Qty, unit, harga satuan serta detail material yang include di dalam nya.
-.. image:: /img/order-sale-items.png
-(Gambar Sale Item Detail)
+
+Revision History
+^^^^^^^^^^^^^^^^
+
+Berisi log history revisi yang pernah dilakukan, log berisi alasan mengapa dilakukan revisi dan nilai yang di revisi
 
 
-#. Revision History : Berisi log history revisi yang pernah dilakukan, log berisi alasan mengapa dilakukan revisi dan nilai yang di revisi
-#. Scope Of Work : Detail scope of work baik dari Sisi Suprabakti maupun sisi Customer
+.. image:: /img/rfq-revision-history.png
+
+(Gambar Tab Revision History)
+
+
+Field yang ada pada **Revision History** :
+
++---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
+|NO | Fileds                | Harus Diisi   | Keterangan                                                                                                         |
++===+=======================+===============+====================================================================================================================+
+|1  | No#                   | Tidak         | Nomor Quotation                                                                                                    |
++---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
+|2  | Total (Tax Exclude)   | Tidak         | Total nilai penawaran yang direvisi                                                                                |
++---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
+|3  | Reason of Revision    | Tidak         | Alasan / Penjelasan mengapa penawaran tersebut di revisi                                                           |
++---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
+|4  | Date                  | Tidak         | Tanggal Revisi                                                                                                     |
++---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
+
+
+
+Scope Of Work
+^^^^^^^^^^^^^
+
+Pada tab **Scope of Work** terdapat field Detail scope of work baik dari Sisi Suprabakti maupun sisi Customer. Field ini diisi untuk menjelaskan scope lingkup pekerjaan yang dilakukan baik di sisi Customer maupun Suprabakti Mandiri.
 
 
 
@@ -173,7 +199,7 @@ Contoh Kasus
 
 -. Membuat penawaran Jasa Include Material
 
-1. Dilkukan Penawaran ke PT. Indocement Persero, Tbk untuk item Super Screw 65 BW 1200
+1. Dilakukan Penawaran ke PT. Indocement Persero, Tbk untuk item Super Screw 65 BW 1200
 
 
 
@@ -186,5 +212,58 @@ SALE ORDER
 ----------
 
 
+
 ADHOC ORDER
 -----------
+
+
+
+
+
+Penjelasan Field: 
+
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|NO | Fileds                | Harus Diisi   | Keterangan                                                                               |
++===+=======================+===============+==========================================================================================+
+|1  | Customer              | Ya            |Nama / Data Customer, nama perusahaan Customer                                            |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|2  | Delivery Address      | Ya            |Nama Site / Alamat tempat Pengiriman yang akan dituju                                     |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|3  | Attention             | Tidak         |Nama Orang yang dituju untuk penawaran                                                    |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|4  | Invoice Address       | Tidak         |Alamat yang akan digunakan untuk Cetak Invoice                                            |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|5  | Currency              | Ya            |Mata uang yang digunakan dalam transaksi                                                  |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|6  | Date                  | Ya            |Tanggal Penawaran                                                                         |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|7  | Sales Person          | Ya            |Nama sales yang menawarkan                                                                |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|8  | Sale Group            | Ya            |Group Sales yang menawarkan                                                               |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|9  | Payment Term          | Ya            |Term Payment Sistem yang diberlakukan                                                     |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|10 | Create Invoice        | Ya            |Trigger untuk membuat invoice :                                                           |
+|   |                       |               |   1. On Demand - Invoice akan dibuat sesuai permintaan                                   |
+|   |                       |               |   2. On Delivery Order - Invoice akan dikirim setelah barang dikirim / diterima          |
+|   |                       |               |   3. Before Delivery - Invoice akan dikirim bersamaan dengan pengiriman barang           |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|11 | Term and Conditions   | Tidak         |Group Sales yang menawarkan                                                               |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|12 | Base Total            | Tidak         |Informasi Total nilai Sebelum Discount                                                    |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|13 | Discount              | Tidak         |Informasi nilai total discount dalam penawaran                                            |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|14 | Sub Total             | Tidak         |Informasi Total nilai setelah Discount / Dasar Pengenaan Pajak (DPP)                      |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|15 | Tax                   | Tidak         |Informasi nilai pajak yang dikenakan dalam penawaran                                      |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|16 | Total                 | Tidak         |Total nilai transaksi                                                                     |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|17 | Sale Items            | Ya            |List item / produk yang di tawarkan                                                       |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|18 | Revision History      | Tidak         |List Data Revisi yang pernah dilakukan, terisi otomatis pada saat dilakukan revisi pada   |
+|   |                       |               |dokumen                                                                                   |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+
+|19 | Scope Of Work         | Tidak         |Berisi Scope of work baik dari sisi Customer maupun Suprabakti Mandiri                    |
++---+-----------------------+---------------+------------------------------------------------------------------------------------------+

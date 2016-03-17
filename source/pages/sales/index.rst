@@ -9,4 +9,5 @@ Contents:
    order/index
    op/index
    dn/index
+   adhoc/index
    wo/index
