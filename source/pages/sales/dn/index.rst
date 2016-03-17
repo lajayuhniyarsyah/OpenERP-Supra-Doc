@@ -4,18 +4,29 @@ DELIVERY NOTE
 
 Contents:
 
-Merupakan modul untuk input penawaran penjualan ke Customer.
+Merupakan modul untuk melakukan input surat jalan oleh sales.
 Modul ini dapat di akses pada menu "Sales" -> "Sales" -> "Delivery Note"
 
 
 Flow Delivery Note
 
-.. image:: /img/quotation.png
+.. image:: /img/dnflow.png
 
 
-(Penjelasan flow skip.........................)
+#. Flow dimulai setelah melewati proses **Order Preparation** dimana barang telah dipacking oleh warehouse staff. 
+#. Selanjutnya sales melakukan penginputan surat jalan melalui ERP pada modul menu Delivery Note. 
+#. Setelah proses penginputan sudah lengkap maka sales dapat mencetak draft surat jalan di kertas dengan meng-submit dokumen terlebih dahulu. 
+#. Selanjutnya sales terlebih dahulu meminta approve (persetujuan) dan tanda tangan dari manager atau bagian lain yang bersangkutan.
+#. Selanjutnya setelah surat jalan disetujui maka akan ada proses negosiasi dengan customer, dari proses tersebut ada beberapa kemungkinan yaitu meng-cancel surat jalan karena adanya pembatalan pemesanan, meng-postpone surat jalan karena customer meminta barang untuk di tunda pengirimannya terlebih dahulu, atau validasi surat jalan kepada bagian warehouse yang berarti barang telah keluar dari gudang dan dikirim pada customer. 
 
+Pada saat customer memilih untuk menunda (postpone) pengiriman barang, maka terdapat flow dari proses postpone tersebut  
 
+.. image:: /img/dnpostponeflow.png
+
+#. Flow dimulai dengan bagian warehouse mendapatkan surat jalan penundaan dari barang yang akan dikirim.
+#. Selanjutnya proses dilanjutkan dengan negosiasi kembali dengan user, dari proses tersebut ada beberapa kemungkinan yaitu pembatalan (cancel) pengiriman barang, Re-packing item dimana pada proses ini paket dibongkar ulang untuk melakukan penambahan atau mengganti barang yang akan dikirim sesuai dengan permintaan customer, untuk proses Re-packing harus kembali melakukan proses Order preparation, dan kemungkinan terakhir yaitu melanjutkan kembali proses dari surat jalan.   
+#. Dalam melanjutkan kembali proses surat jalan terdapat dua kemungkinan sebelum meminta tanda tangan dan approve (persetujuan) kembali kepada pihak manager atau bagian lain yang bersangkutan, dimana sales dapat tetap menggunakan nomor surat jalan yang lama atau menggantinya dengan surat jalan yang baru dengan me-reload nomor dokumen.
+#. Setelah surat jalan disetujui maka akan ada proses negosiasi kembali dengan customer, dari proses tersebut ada beberapa kemungkinan yaitu meng-cancel surat jalan karena adanya pembatalan pemesanan, meng-postpone kembali surat jalan, atau validasi surat jalan kepada bagian warehouse yang berarti barang telah keluar dari gudang dan dikirim pada customer.
 
 Form Delivery Note :
 
