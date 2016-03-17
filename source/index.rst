@@ -13,6 +13,7 @@ Contents:
 
    pertamakali
    pages/sales/index
+   pages/faq/index
 
 
 
