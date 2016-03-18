@@ -1,5 +1,9 @@
+Handing Penawaran dan Sale Order
+================================
+
+
 Membuat Penawaran (RFQ)
-=======================
+-----------------------
 
 Untuk membuat penawaran terhadap produk dan jasa terdapat langkah-langkah yang harus dilakukan, dimana pembuatan penawaran dilakukan melalui ERP pada modul menu RFQ. Berikut merupakan tahap-tahap pembuatan penawaran :
 
@@ -142,6 +146,39 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 - Dengan begitu hasil cetak tersebut dapat digunakan sebagai penawaran penjualan pada Customer. Pada tahap berikutnya terjadi kembali negosiasi dengan Custommer. 
 
 
+
+
+
+
+
+
+
+
+
+Membuat Penawaran Material Include Jasa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Contoh Kasus :
+Dilakukan penawaran 100 Set Roller include jasa pemasangan
+
+
+
+Membuat Penawaran Jasa dengan Menetapkan Material yang akan digunakan
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Konfirmasi Penawaran
+--------------------
+
+Konfirmasi penawaran digunakan untuk mengkonfirmasi draft penawaran yang sudah di buat agar dapat di print dan dikirm ke Customer.
+
+
+Print Penawaran
+---------------
+
+Print Penawaran dapat dilakukan setelah Konfirmasi Penawaran
+
+
+
 Revisi Penawaran
 ----------------
 
@@ -158,3 +195,11 @@ Pada suatu kasus Costomer meminta perubahan pada penawaran penjualan. Dengan beg
 - Barulah setelah itu data penawaran kembali diubah sesuai dengan keinginan Customer. Dan tahap selanjutnya adalah kembali melakukan penginputan seperti pada tahap sebelumnya. Untuk melihat list revisi dari penawaran dapat melihat pada tab Revision History.
 
 .. image:: /img/mp-revisionhistory.png
+
+
+Cancel Penawaran / WIN / Lost
+-----------------------------
+
+
+Mengkonversi Penawaran menjadi Sale Order / Membuat Sale Order
+--------------------------------------------------------------
