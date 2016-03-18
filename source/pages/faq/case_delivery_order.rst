@@ -26,8 +26,8 @@ Membuat Dokumen Surat Jalan / Delivery Note (DN)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
-Potpone Pengiriman / Menahan Pengiriman
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Postpone Pengiriman / Menahan Pengiriman
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 
 Mengirim Surat Jalan Postpone

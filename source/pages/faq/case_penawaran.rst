@@ -1,21 +1,25 @@
+Handing Penawaran dan Sale Order
+================================
+
+
 Membuat Penawaran (RFQ)
-=======================
+-----------------------
 
 Untuk membuat penawaran terhadap produk dan jasa terdapat langkah-langkah yang harus dilakukan, dimana pembuatan penawaran dilakukan melalui ERP pada modul menu RFQ. Berikut merupakan tahap-tahap pembuatan penawaran :
 
-#. Masuk pada OpenERP dengan melakukan login telebih dahulu, jika login sukses maka akan masuk pada tampilan utama dari OpenERP
+- Masuk pada OpenERP dengan melakukan login telebih dahulu, jika login sukses maka akan masuk pada tampilan utama dari OpenERP
 
 .. image:: /img/mp-tampilanutama.png
 
-#. Masuk pada menu **Sales**, pada bagian sidebar pilih modul **RFQ** yang terdapat pada kategori **Sales**. berikut merupakan tampilan dan isi dari modul RFQ.
+- Masuk pada menu **Sales**, pada bagian sidebar pilih modul **RFQ** yang terdapat pada kategori **Sales**. berikut merupakan tampilan dan isi dari modul RFQ.
 
 .. image:: /img/mp-masukrfq.png
 
-#. Pada modul RFQ berisi list penawaran penjualan ke Customer, Untuk membuat penawaran penjualan baru tekan tombol **Create** dan masuk pada tampilan form **Quotation**  
+- Pada modul RFQ berisi list penawaran penjualan ke Customer, Untuk membuat penawaran penjualan baru tekan tombol **Create** dan masuk pada tampilan form **Quotation**  
 
 .. image:: /img/formquotation.png 
 
-#. Form **Quotation** berfungsi untuk melakukan proses penginputan penawaran penjualan ke Customer. 
+- Form **Quotation** berfungsi untuk melakukan proses penginputan penawaran penjualan ke Customer. 
 
 Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan memberikan sebuah contoh kasus penawaran penjualan kepada CV (CV. Lestari Utama) yang ingin melakukan pemesanan produk yaitu 82 set **Carry Idler**. 
 
@@ -127,11 +131,11 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 
 .. image:: /img/mp-note.png
 
- - Jika seluruh field telah terisi, langkah selanjutnya adalah mengkonfirmasi dengan menekan tombol Confirm. 
+- Jika seluruh field telah terisi, langkah selanjutnya adalah mengkonfirmasi dengan menekan tombol Confirm. 
 
  .. image:: /img/mp-confirm.png
 
- - Maka data telah terkonfirmasi, dan telah dapat dicetak dikertas. Untuk mencetak data tekan tombol Print Quotation
+- Maka data telah terkonfirmasi, dan telah dapat dicetak dikertas. Untuk mencetak data tekan tombol Print Quotation Web.
 
 .. image:: /img/mp-print.png
 
@@ -139,7 +143,48 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 
 .. image:: /img/mp-hasilprint.png
 
-- Dengan begitu hasil cetak tersebut dapat digunakan sebagai penawaran penjualan pada Customer. Pada tahap berikutnya terjadi kembali negosiasi dengan Custommer. Pada suatu kasus Costomer meminta pengurangan atau perubahan pada penawaran penjualan. Dengan begitu, hal yang harus dilakukan adalah melakukan revisi penawaran. Yaitu dengan menekan tombol Revise.
+- Dengan begitu hasil cetak tersebut dapat digunakan sebagai penawaran penjualan pada Customer. Pada tahap berikutnya terjadi kembali negosiasi dengan Custommer. 
+
+
+
+
+
+
+
+
+
+
+
+Membuat Penawaran Material Include Jasa
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Contoh Kasus :
+Dilakukan penawaran 100 Set Roller include jasa pemasangan
+
+
+
+Membuat Penawaran Jasa dengan Menetapkan Material yang akan digunakan
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
+Konfirmasi Penawaran
+--------------------
+
+Konfirmasi penawaran digunakan untuk mengkonfirmasi draft penawaran yang sudah di buat agar dapat di print dan dikirm ke Customer.
+
+
+Print Penawaran
+---------------
+
+Print Penawaran dapat dilakukan setelah Konfirmasi Penawaran
+
+
+
+Revisi Penawaran
+----------------
+
+Pada suatu kasus Costomer meminta perubahan pada penawaran penjualan. Dengan begitu, hal yang harus dilakukan adalah melakukan revisi penawaran. langkah-langkah yang harus dilakukan yaitu 
+
+- Masuk kembali pada modul RFQ dan pilih draft penawaran penjualan untuk perusahaan bersangkutan. Untuk melakukan revisi tekan Revise.
 
 .. image:: /img/mp-revise.png
 
@@ -147,6 +192,14 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 
 .. image:: /img/mp-revisereason.png
 
-- Barulah setelah itu data penawaran kembali diubah sesuai dengan keinginan Customer. Dan tahap selanjutnya adalah kembali melakukan penginputan seperti tahap sebelumnya. Untuk melihat hasil revisi dari penawaran dapat melihat pada tab Revision History.
+- Barulah setelah itu data penawaran kembali diubah sesuai dengan keinginan Customer. Dan tahap selanjutnya adalah kembali melakukan penginputan seperti pada tahap sebelumnya. Untuk melihat list revisi dari penawaran dapat melihat pada tab Revision History.
 
 .. image:: /img/mp-revisionhistory.png
+
+
+Cancel Penawaran / WIN / Lost
+-----------------------------
+
+
+Mengkonversi Penawaran menjadi Sale Order / Membuat Sale Order
+--------------------------------------------------------------
