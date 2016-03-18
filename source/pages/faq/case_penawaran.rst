@@ -132,27 +132,36 @@ Untuk membuat penawaran terhadap produk dan jasa terdapat langkah-langkah yang h
 Membuat Penawaran Material Include Jasa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Contoh Kasus :
-Pada kasus ini dilakukan penawaran 82 Set SACI (Self Aligning Carry Idler) include jasa pemasangan.  
+- Pada kasus ini dilakukan penawaran 82 Set SACI (Self Aligning Carry Idler) include jasa pemasangan.  
 
- .. image:: /img/mp-includejasa1.png
+.. image:: /img/mp-includejasa1.png
 
- Untuk menambahkan jasa pada penawaran material. Masuk pada form order line dan pilih product yang akan dipesan dimana pada kasus ini Customer memesan 82 set SACI (Self Aligning Carry Idler). Pada bagian tab material line telah terisi dengan material item yang ter-include dengan item yang dipesan yaitu tiap 1 set SACI terdapat 1 Frame dan 3 set Carry Roller. Untuk menambah jasa pada penawaran material yaitu pilih **Add an item** dan masukkan jasa yang dibutuhkan.
+- Untuk menambahkan jasa pada penawaran material. Masuk pada form order line dan pilih product yang akan dipesan dimana pada kasus ini Customer memesan 82 set SACI (Self Aligning Carry Idler). Pada bagian tab material line telah terisi dengan material item yang ter-include dengan item yang dipesan yaitu tiap 1 set SACI terdapat 1 Frame dan 3 set Carry Roller. 
 
-  .. image:: /img/mp-includejasa2.png  
+- Untuk menambah jasa pada penawaran material yaitu pilih **Add an item** dan masukkan jasa yang dibutuhkan.
 
-Melihat Picking Location berada pada daerah Pasar Kemis maka resource yang akan dipanggil akan berasal dari site Pasar Kemis.
+.. image:: /img/mp-includejasa2.png  
 
+- Melihat Picking Location berada pada daerah Pasar Kemis maka resource yang akan dipanggil akan berasal dari site Pasar Kemis.
+
+- Pada material item telah terisi dengan jasa yaitu **Installasi**, hal tersebut menunjukkan bahwa jasa tersebut telah ter-inculude sebagai bagian dari penawaran material.
 
 Membuat Penawaran Jasa dengan Menetapkan Material yang akan digunakan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Contoh Kasus :
-Pada kasus ini dilakukan penawaran jasa yaitu Lining dimana pada penawarannya Customer juga memilih material yang akan digunakan.
+- Pada kasus ini dilakukan penawaran jasa yaitu Lining dimana pada penawarannya Customer juga memilih material yang akan digunakan.
 
 .. image:: /img/mp-includematerial1.png
 
-Untuk menambahkan material yang akan digunakan masuk pada form Order lines, pada bagian tab Material Item telah terisi dengan jasa yang telah dipesan. Untuk menambahkan material yang diinginkan yaitu pilih **Add an item** dan masukkan material yang dibutuhkan.
+- Pada gambar terlihat jasa yang dipesan oleh Customer yaitu Lining, untuk menambahkan material yang akan digunakan dan menjadi include dari jasa yaitu dengan masuk pada form Order lines.  
+
+.. image:: /img/mp-includematerial3.png
+
+- Pada bagian tab Material Item telah terisi dengan jasa yang telah dipesan yaitu Lining. Untuk menambahkan material yang diinginkan yaitu pilih **Add an item** dan masukkan material yang dibutuhkan.
 
 .. image:: /img/mp-includematerial2.png
+
+- Pada material item telah terisi dengan penambahan material yaitu **[OHJIHE7I4] OHJI Hard E-7I 4 mm**, hal tersebut menunjukkan bahwa material tersebut telah ter-inculude sebagai bagian dari penawaran jasa.
 
 Konfirmasi Penawaran
 --------------------
