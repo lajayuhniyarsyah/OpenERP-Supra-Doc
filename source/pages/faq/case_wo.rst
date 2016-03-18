@@ -106,6 +106,9 @@ Jika sudah maka akan tampil seperti gambar dibawah ini.
 
 
 
+Berikut ini ada 3 contoh kasus pada pembuatan SPK:
+
+
 SPK Fabrikasi Barang
 --------------------
 
@@ -120,6 +123,7 @@ Ada beberapa hal yang harus diperhatikan dalam membuat SPK Fabrikasi Barang, yai
 3. Field: Work Location. Work Location adalah tempat dimana pekerjaan dilakukan. Pemilihan Work Location harus Work Shop. Field ini bersifat required.
 
 4. Field: Internal Handler Location. Internal Handler Location adalah tempat resource yang akan ikut serta dalam SPK. Field ini bersifat required.
+
 
 
 
@@ -157,3 +161,14 @@ Produk yang terdapat pada tab Output Picking tersebut berasal dari SO 00185.
 Pada tab Data Material, isi masing-masing fieldnya. a. Product-nya adalah MANPOWER. b. Description, pada field ini tambahkan keterangan tentang manpower pada SPK yang sedang dibuat. c. Qty, jumlah manpower. d. UoM, satuan manpower-nya adalah orang. e. Costumer Materials, jika material yang digunakan berasal dari Costumer.
 
 Jika selesai klik Save.
+
+
+
+SPK Site Workshop
+-----------------
+
+Berikut ini adalah cara membuat SPK untuk contoh kasuk Work Location pada Work Shop.
+
+.. image:: /img/wo-work-location-work-shop.png
+
+Isi semua field pada form-nya. Hal yang perlu diperhatikan adalah pada field Work Location, pilih Work Shop. Artinya lokasi tempat kerja berada di Workshop.
