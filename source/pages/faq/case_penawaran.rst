@@ -149,4 +149,4 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 
 - Barulah setelah itu data penawaran kembali diubah sesuai dengan keinginan Customer. Dan tahap selanjutnya adalah kembali melakukan penginputan seperti tahap sebelumnya. Untuk melihat hasil revisi dari penawaran dapat melihat pada tab Revision History.
 
-.. image:: /img/mp-revisereason.png
+.. image:: /img/mp-revisionhistory.png
