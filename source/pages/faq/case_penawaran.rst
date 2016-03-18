@@ -21,9 +21,7 @@ Untuk membuat penawaran terhadap produk dan jasa terdapat langkah-langkah yang h
 
 - Form **Quotation** berfungsi untuk melakukan proses penginputan penawaran penjualan ke Customer. 
 
-Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan memberikan sebuah contoh kasus penawaran penjualan kepada CV (CV. Lestari Utama) yang ingin melakukan pemesanan produk yaitu 82 set **Carry Idler**. 
-
-- Pada form **Quotation**, terdapat field Customer yaitu field yang berisi pelanggan yang melakukan pemesanan barang dimana pada kasus ini pelanggan yang dimaksud adalah CV. Lestari Utama. Untuk mencari nama CV yang bersangkutan tekan tombol dropdown pada field Customer dan pilih **Search More**.
+- Pada form **Quotation**, terdapat field Customer yaitu field yang berisi pelanggan yang melakukan pemesanan barang. Untuk mencari nama CV yang bersangkutan tekan tombol dropdown pada field Customer dan pilih **Search More**.
 
 .. image:: /img/mp-searchmore.png
 
@@ -43,7 +41,7 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 
 .. image:: /img/mp-invoiceadd.png
 
-- Selanjutnya terdapat field Currency yaitu merupakan tipe mata uang yang akan digunakan, didalamnya telah tersedia dengan tipe-tipe mata uang. Pada kasus ini menggunakan mata uang rupiah.
+- Selanjutnya terdapat field Currency yaitu merupakan tipe mata uang yang akan digunakan, didalamnya telah tersedia dengan tipe-tipe mata uang. 
 
 .. image:: /img/mp-currency.png
 
@@ -55,7 +53,7 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 
 .. image:: /img/mp-salessearch.png
 
-- Maka akan masuk pada tampilan form **Searh: Sales**, kemudian input nama Sales. Pada kasus ini nama sales yang melakukan penawaran penjualan adalah **Jacpondri** 
+- Maka akan masuk pada tampilan form **Searh: Sales**, kemudian input nama Sales. 
 
 .. image:: /img/mp-salessearch1.png
 
@@ -63,7 +61,7 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 
 .. image:: /img/mp-searchsalesgr.png
 
-- Maka akan masuk pada tampilan form **Searh: Sale Group**, kemudian input Sale Group. Pada kasus ini Sale Group yang adalah **Sumatra / SMB**
+- Maka akan masuk pada tampilan form **Searh: Sale Group**, kemudian input Sale Group. 
 
 .. image:: /img/mp-searchsalesgr1.png
 
@@ -77,7 +75,7 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 
 - Pada form Order Lines terdapat field Product yag berisi produk yang ditawarkan pada Customer. Untuk mencari nama Product yang diinginkan tekan tombol dropdown pada field Product dan pilih **Search More**.
 
-- Maka akan masuk pada tampilan form **Searh: Product**, kemudian input nama Product. Pada kasus ini Product yang digunakan adalah **Carry Idler**.
+- Maka akan masuk pada tampilan form **Searh: Product**, kemudian input nama Product. 
 
 .. image:: /img/mp-searchproduct.png
 
@@ -129,54 +127,54 @@ Untuk menjelaskan cara penginputan pada form **Quotation**, dibawah ini akan mem
 
 - Terdapat field Note untuk memberikan catatan dari penawaran penjualan.
 
-.. image:: /img/mp-note.png
-
-- Jika seluruh field telah terisi, langkah selanjutnya adalah mengkonfirmasi dengan menekan tombol Confirm. 
-
- .. image:: /img/mp-confirm.png
-
-- Maka data telah terkonfirmasi, dan telah dapat dicetak dikertas. Untuk mencetak data tekan tombol Print Quotation Web.
-
-.. image:: /img/mp-print.png
-
-- Hasil data akan berbentuk file PDF dan siap untuk dicetak.
-
-.. image:: /img/mp-hasilprint.png
-
-- Dengan begitu hasil cetak tersebut dapat digunakan sebagai penawaran penjualan pada Customer. Pada tahap berikutnya terjadi kembali negosiasi dengan Custommer. 
-
-
-
-
-
-
-
-
-
 
 
 Membuat Penawaran Material Include Jasa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 Contoh Kasus :
-Dilakukan penawaran 100 Set Roller include jasa pemasangan
+Pada kasus ini dilakukan penawaran 82 Set SACI (Self Aligning Carry Idler) include jasa pemasangan.  
 
+ .. image:: /img/mp-includejasa1.png
+
+ Untuk menambahkan jasa pada penawaran material. Masuk pada form order line dan pilih product yang akan dipesan dimana pada kasus ini Customer memesan 82 set SACI (Self Aligning Carry Idler). Pada bagian tab material line telah terisi dengan material item yang ter-include dengan item yang dipesan yaitu tiap 1 set SACI terdapat 1 Frame dan 3 set Carry Roller. Untuk menambah jasa pada penawaran material yaitu pilih **Add an item** dan masukkan jasa yang dibutuhkan.
+
+  .. image:: /img/mp-includejasa2.png  
+
+Melihat Picking Location berada pada daerah Pasar Kemis maka resource yang akan dipanggil akan berasal dari site Pasar Kemis.
 
 
 Membuat Penawaran Jasa dengan Menetapkan Material yang akan digunakan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Contoh Kasus :
+Pada kasus ini dilakukan penawaran jasa yaitu Lining dimana pada penawarannya Customer juga memilih material yang akan digunakan.
 
+.. image:: /img/mp-includematerial1.png
+
+Untuk menambahkan material yang akan digunakan masuk pada form Order lines, pada bagian tab Material Item telah terisi dengan jasa yang telah dipesan. Untuk menambahkan material yang diinginkan yaitu pilih **Add an item** dan masukkan material yang dibutuhkan.
+
+.. image:: /img/mp-includematerial2.png
 
 Konfirmasi Penawaran
 --------------------
 
-Konfirmasi penawaran digunakan untuk mengkonfirmasi draft penawaran yang sudah di buat agar dapat di print dan dikirm ke Customer.
+Konfirmasi penawaran digunakan untuk mengkonfirmasi draft penawaran yang sudah di buat agar dapat di print dan dikirim ke Customer.
+yaitu dengan menekan tombol Confirm.
+
+.. image:: /img/mp-confirm.png
 
 
 Print Penawaran
 ---------------
 
-Print Penawaran dapat dilakukan setelah Konfirmasi Penawaran
+Print Penawaran dapat dilakukan setelah Konfirmasi Penawaran. Untuk mencetak data tekan tombol Print Quotation Web.
 
+.. image:: /img/mp-print.png
+
+Hasil data akan berbentuk file PDF dan siap untuk dicetak.
+
+.. image:: /img/mp-hasilprint.png
+
+Dengan begitu hasil cetak tersebut dapat digunakan sebagai penawaran penjualan pada Customer. Pada tahap berikutnya terjadi kembali negosiasi dengan Custommer.
 
 
 Revisi Penawaran
@@ -188,7 +186,7 @@ Pada suatu kasus Costomer meminta perubahan pada penawaran penjualan. Dengan beg
 
 .. image:: /img/mp-revise.png
 
-- Maka akan masuk pada Form Reason / Explnation yang berisi catatan alasan perubahan penawaran penjualan.  
+- Maka akan masuk pada Form Reason / Explanation yang berisi catatan alasan perubahan penawaran penjualan.  
 
 .. image:: /img/mp-revisereason.png
 
