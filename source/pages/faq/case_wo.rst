@@ -102,3 +102,21 @@ Jika sudah maka akan tampil seperti pada gambar.
 Jika sudah maka akan tampil seperti gambar dibawah ini.
 
 .. image:: /img/wo_25.png
+
+
+
+
+SPK Fabrikasi Barang
+--------------------
+
+.. image:: /img/wo_fabrikasi_barang.png
+
+Ada beberapa hal yang harus diperhatikan dalam membuat SPK Fabrikasi Barang, yaitu:
+
+1. Field: Source Type. Source Type digunakan untuk menentukan sumber SPK yang akan dibuat. Field ini bersifat required.
+
+2. Field: Sale Order. Sale Order adalah nomor SO yang telah dibuat sebelumnya pada menu Sales -> Sales Orders. Perlu diperhatikan bahwa jika sudah mengisi field ini, bebepa field lainnya akan otomatis terisi, dan pastikan Output Picking untuk produknya berupa barang. Field ini bersifat required. 
+
+3. Field: Work Location. Work Location adalah tempat dimana pekerjaan dilakukan. Pemilihan Work Location harus Work Shop. Field ini bersifat required.
+
+4. Field: Internal Handler Location. Internal Handler Location adalah tempat resource yang akan ikut serta dalam SPK. Field ini bersifat required.
