@@ -207,6 +207,38 @@ Pada suatu kasus Costomer meminta perubahan pada penawaran penjualan. Dengan beg
 Cancel Penawaran / WIN / Lost
 -----------------------------
 
+Pada saat proses penawaran penjualan pada Customer terdapat beberapa kemungkinan yang akan terjadi yaitu pembatalan penawaran (Cancel), penawaran dimenangkan (Win), atau penawaran gagal (Lost).
+
+- Penawaran dibatalkan  ketika hasil dari proses penginputan data pada form Qutation belum sampai pada tahap dikonfirmasi. Untuk melakukan pembatalan dari penawaran penjualan yaitu dengan menekan tombol Cancel.
+
+.. image:: /img/mp-cancel.png
+
+- Dengan dilakukannya Cancel dari penawaran penjualan maka status dari penawaran telah berubah menjadi Cancel.
+
+.. image:: /img/mp-cancelst.png
+
+- Penawaran dimenangkan (Win) adalah kondisi dimana penawaran penjualan telah dikonfirmasi dan dicetak. Hasil dari penawaran penjualan tersebut disepakati oleh Customer.  
+
+- Untuk melakukan penginputan setelah penawaran disepakati yaitu dengan menekan tombol Win.
+
+.. image:: /img/mp-winorder.png
+
+- Hasil dari penginputan akan digunakan untuk penginputan pada modul Order Preparation. Dan status dari penawaran penjualan berubah menjadi Win.
+
+.. image:: /img/mp-winst.png
+
+- Penawaran gagal (Lost) adalah kondisi dimana penawaran penjualan telah dikonfirmasi dan dicetak. Namun, Hasil dari penawaran penjualan tersebut tidak disepakati oleh Customer.  
+
+- Untuk melakukan penginputan setelah penawaran gagal / kalah yaitu dengan menekan tombol Lost.
+
+.. image:: /img/mp-lost.png
+
+- Pada form Lost disertakan dengan penjelasan dan alasan dari gagalnya penawaran dan penjualan kepada Customer.
+
+- Dengan dilakukannya Lost berarti penawaran telah gagal dan status pada penawaran menjadi Lost.
+
+.. image:: /img/mp-lostst.png
+
 
 Mengkonversi Penawaran menjadi Sale Order / Membuat Sale Order
 --------------------------------------------------------------
