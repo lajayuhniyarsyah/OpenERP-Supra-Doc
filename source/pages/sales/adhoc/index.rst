@@ -18,7 +18,7 @@ Flow Adhoc Order Request
 
 Form Adhoc Order Request :
 
-.. image:: /img/adh-form.png
+.. image:: /img/adhoc-form.png
 
 
 
