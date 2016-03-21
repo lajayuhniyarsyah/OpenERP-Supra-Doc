@@ -9,7 +9,7 @@ Adhoc Order, merupakan modul untuk ................
 
 Flow Adhoc Order Request
 
-.. image:: /img/quotation.png
+.. image:: /img/adhoc-flow.png
 
 
 (penjelasan flow)

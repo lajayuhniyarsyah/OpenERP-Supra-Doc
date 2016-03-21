@@ -7,7 +7,7 @@ Contents:
    :maxdepth: 2
 
    order/index
+   adhoc/index
    op/index
    dn/index
-   adhoc/index
    wo/index
