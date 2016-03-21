@@ -4,8 +4,10 @@ Pengenalan Order Preparation
 
 Contents:
 
-Order Preparation, merupakan modul untuk input pemesanan penjualan ke Customer.
+Order Preparation / Delivery Order merupakan Modul dokumen Perintah Penyiapan Barang Ke Gudang di Suprabakti Mandiri.
+
 Modul ini dapat di akses pada menu "Sales" -> "Sales" -> "Order Preparation"
+
 
 Flow Order Preparation
 
@@ -57,9 +59,7 @@ Pada form tersebut terdapat **4 Tab**, yaitu :
 Order Lines
 ^^^^^^^^^^^
 
-Order Lines merupakan item order dari suatu penawaran.
-Item yang dimaksud adalah merupakan **Produk, ataupun Jasa** yang ditawarkan kepada Customer.
-Item yang ditawarkan bisa saja dalam satuan kumulatif seperti SET, LOT, dll.
+Order Lines berisikan list item yang harus di siapkan oleh Warehouse. Dalam list tersebut juga lengkap dengan quantity dan unit yang harus disiapkan.
 
 
 .. image:: /img/op-order-lines.png
@@ -116,6 +116,11 @@ Penjelasan field :
 +----+----------------------+-----------------+-------------------------------------------------------------------------+
 | 5  | Qty                  | Tidak           | Banyaknya item yang di order                                            |
 +----+----------------------+-----------------+-------------------------------------------------------------------------+
+
+
+Print Out
+^^^^^^^^^
+.. image:: /img/op-printout.png
 
 
 

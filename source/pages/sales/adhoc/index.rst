@@ -4,7 +4,7 @@ ADHOC ORDER REQUEST
 
 Contents:
 
-Adhoc Order, merupakan modul untuk ................
+Adhoc Order merupakan modul Pemesanan yang dilakukan tanpa P.O diawal namun telah mendapat kesepakatan  antar Suprabakti dan Customer.
 
 
 Flow Adhoc Order Request
@@ -13,7 +13,6 @@ Flow Adhoc Order Request
 
 
 (penjelasan flow)
-
 
 
 Form Adhoc Order Request :
