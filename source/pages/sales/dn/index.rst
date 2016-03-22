@@ -1,14 +1,23 @@
+.. _pages_dn:
+
 DELIVERY NOTE
 =============
 
+.. _pages_dn_penjelasan:
 
-Contents:
+Penjelasan
+----------
 
 Merupakan modul untuk melakukan input surat jalan oleh sales.
 Modul ini dapat di akses pada menu "Sales" -> "Sales" -> "Delivery Note"
 
+.. _pages_dn_flow_delivery_note:
 
 Flow Delivery Note
+------------------
+
+Flow
+''''
 
 .. image:: /img/dnflow.png
 
@@ -19,6 +28,11 @@ Flow Delivery Note
 #. Selanjutnya sales terlebih dahulu meminta approve (persetujuan) dan tanda tangan dari manager atau bagian lain yang bersangkutan.
 #. Selanjutnya setelah surat jalan disetujui maka akan ada proses negosiasi dengan customer, dari proses tersebut ada beberapa kemungkinan yaitu meng-cancel surat jalan karena adanya pembatalan pemesanan, meng-postpone surat jalan karena customer meminta barang untuk di tunda pengirimannya terlebih dahulu, atau validasi surat jalan kepada bagian warehouse yang berarti barang telah keluar dari gudang dan dikirim pada customer. 
 
+.. _pages_dn_postpone:
+
+Postpone
+''''''''
+
 Pada saat customer memilih untuk menunda (postpone) pengiriman barang, maka terdapat flow dari proses postpone tersebut  
 
 .. image:: /img/dnpostponeflow.png
@@ -28,8 +42,22 @@ Pada saat customer memilih untuk menunda (postpone) pengiriman barang, maka terd
 #. Dalam melanjutkan kembali proses surat jalan terdapat dua kemungkinan sebelum meminta tanda tangan dan approve (persetujuan) kembali kepada pihak manager atau bagian lain yang bersangkutan, dimana sales dapat tetap menggunakan nomor surat jalan yang lama atau menggantinya dengan surat jalan yang baru dengan me-reload nomor dokumen.
 #. Setelah surat jalan disetujui maka akan ada proses negosiasi kembali dengan customer, dari proses tersebut ada beberapa kemungkinan yaitu meng-cancel surat jalan karena adanya pembatalan pemesanan, meng-postpone kembali surat jalan, atau validasi surat jalan kepada bagian warehouse yang berarti barang telah keluar dari gudang dan dikirim pada customer.
 
-Form Delivery Note :
+.. _pages_dn_interface:
 
+Interface / Tampilan
+--------------------
+
+.. _pages_dn_main_view:
+
+Tampilan Utama / Tabel / Tree
+'''''''''''''''''''''''''''''
+
+.. _pages_dn_form:
+
+Form Delivery Note
+''''''''''''''''''
+
+Berikut ini adalah tampilan Form Delivery Note :
  .. image:: /img/dn-1-edit.png
 
 
@@ -78,7 +106,7 @@ Penjelasan Field:
 Pada form tersebut terdapat **5 Tab**, yaitu :
 
 Note Lines
-----------
+``````````
 
 Note Lines merupakan item sale yang telah disiapkan dari suatu penawaran.
 Pada Note Lines berisi pula informasi mengenai material tambahan yang merupakan paket dari item tersebut.
@@ -116,7 +144,7 @@ Field yang ada pada **Note Lines**:
 
 
 Note Lines Material
-^^^^^^^^^^^^^^^^^^^
+```````````````````
 
 Note Lines Material berisi daftar material yang merupakan paket dari item.
 
@@ -164,7 +192,7 @@ Field yang ada pada **Note Line Material**:
 
 
 Packing Lines
--------------
+`````````````
 
 Packing Lines merupakan list mengenai detail kemasan.
 
@@ -202,7 +230,7 @@ Field yang ada pada **Packing Lines**:
 
 
 Notes
------
+`````
 
 Notes berisi catatan internal.
 
@@ -222,7 +250,7 @@ Field yang ada pada **Notes**:
 
 
 Others
-------
+``````
 
 .. image:: /img/dn-others.png
 
@@ -242,7 +270,7 @@ Field yang ada pada **Others**:
 
 
 Proses Return Products
-----------------------
+``````````````````````
 
 Proses Return Products berisi informasi mengenai pengembalian barang.
 
@@ -277,7 +305,6 @@ Field yang ada pada **Proses Return Products**:
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
 Print Output
-^^^^^^^^^^^^
-
+------------
 
 .. image:: /img/dn-printout-raw.png

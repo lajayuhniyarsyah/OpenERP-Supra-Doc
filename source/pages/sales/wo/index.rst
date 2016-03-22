@@ -1,5 +1,5 @@
-SBM Work Order
-==============
+Work Order
+==========
 
 
 Contents:
