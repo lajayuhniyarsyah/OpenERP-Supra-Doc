@@ -16,6 +16,8 @@ Modul ini dapat di akses pada menu "Sales" -> "Sales" -> "Delivery Note"
 Flow Delivery Note
 ------------------
 
+.. _pages_dn_flow:
+
 Flow
 ''''
 
@@ -105,6 +107,8 @@ Penjelasan Field:
 
 Pada form tersebut terdapat **5 Tab**, yaitu :
 
+.. _pages_dn_note_lines:
+
 Note Lines
 ``````````
 
@@ -142,6 +146,8 @@ Field yang ada pada **Note Lines**:
 |8  | Note Line Material    | Tidak         | List dari material yang merupakan paket dari item                                                                  |
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
+
+.. _pages_dn_notes_lines_material:
 
 Note Lines Material
 ```````````````````
@@ -190,6 +196,7 @@ Field yang ada pada **Note Line Material**:
 |11 | unknown               | Tidak         |                                                                                                                    |
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
+.. _pages_dn_packing_lines:
 
 Packing Lines
 `````````````
@@ -228,6 +235,7 @@ Field yang ada pada **Packing Lines**:
 |10  | Weight               | Ya            | Berat dari item                                                                                                    |
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
+.. _pages_dn_notes:
 
 Notes
 `````
@@ -249,6 +257,8 @@ Field yang ada pada **Notes**:
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
 
+.. _pages_dn_others:
+
 Others
 ``````
 
@@ -268,6 +278,8 @@ Field yang ada pada **Others**:
 |2  | Postpone Picking      | Tidak         |                                                                                                                    |
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
+
+.. _pages_dn_proses_return_products:
 
 Proses Return Products
 ``````````````````````
@@ -304,7 +316,10 @@ Field yang ada pada **Proses Return Products**:
 |9  | Status                | Ya            | Status                                                                                                             | 
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
+
+.. _pages_dn_print_output:
+
 Print Output
-------------
+''''''''''''
 
 .. image:: /img/dn-printout-raw.png
