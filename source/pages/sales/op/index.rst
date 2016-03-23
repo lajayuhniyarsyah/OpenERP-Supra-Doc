@@ -1,42 +1,58 @@
+.. _pages_op:
+
 Order Preparation
 =================
 
 
+.. _pages_op_penjelasan:
+
 Penjelasan
-^^^^^^^^^^
+----------
 
 Order Preparation / Delivery Order merupakan Modul dokumen Perintah Penyiapan Barang Ke Gudang di Suprabakti Mandiri.
 
 Modul ini dapat di akses pada menu "Sales" -> "Sales" -> "Order Preparation"
 
 
+.. _pages_op_flow_order_preparation:
+
 Flow Order Preparation
-^^^^^^^^^^^^^^^^^^^^^^
+----------------------
 
 .. image:: /img/quotation.png
 
 (Penjelasan tentang Order Preparation di skip)
 
 
+.. _pages_op_interface:
+
 Interface / Tampilan
-^^^^^^^^^^^^^^^^^^^^
+--------------------
+
+
+.. _pages_op_main_view:
 
 Tampilan Utama
-``````````````
+''''''''''''''
 
 Tampilan utama ketika mengakses modul Order Preparation adalah berbentuk Tabel / Tree.
-Pada tabel berisi informasi seperti Nomor dokumen, tanggal pembuatan, referensi, dll
+Pada tabel berisi informasi seperti Nomor dokumen, tanggal pembuatan, referensi, dll.
 
-.. image:: /img/op-tree.png
+.. image:: /img/op-1.png
 
+
+.. _pages_op_form_order_preparation:
 
 Form Order Preparation
-``````````````````````
+''''''''''''''''''''''
+
 Pada Tampilan Utama terdapat tombol **Create** dimana tombol tersebut berfungsi untuk membuka **Form Order Preparation**.
 
 
+.. _pages_op_main_form:
+
 Form Utama
-''''''''''
+++++++++++
 
 Berikut ini adalah tampilan form Order Preparation
 
@@ -78,8 +94,10 @@ Penjelasan field :
 Pada form tersebut terdapat **4 Tab**, yaitu :
 
 
+.. _pages_op_order_lines:
+
 Order Lines
-'''''''''''
+```````````
 
 Tab Order Lines berisikan list item yang harus di siapkan oleh Warehouse. Dalam list tersebut juga lengkap dengan quantity dan unit yang harus disiapkan.
 
@@ -88,11 +106,9 @@ Tab Order Lines berisikan list item yang harus di siapkan oleh Warehouse. Dalam 
 
 (Gambar Order Lines - Tree)
 
-
 .. image:: /img/op-2-edit.png
 
 (Gambar Order Lines - Form / Detail)
-
 
 Penjelasan field :
 
@@ -140,14 +156,11 @@ Penjelasan field :
 +----+----------------------+-----------------+-------------------------------------------------------------------------+
 
 
-Print Out
-`````````
-.. image:: /img/op-printout.png
 
-
+.. _pages_op_delivery_note:
 
 Delivery Note
-'''''''''''''
+`````````````
 
 Delivery Note merupakan surat pengantar pada pengiriman suatu produk ke Costumer.
 
@@ -176,9 +189,10 @@ Penjelasan field :
 +----+----------------------+-----------------+-------------------------------------------------------------------------+
 
 
+.. _pages_op_notes:
 
 Notes
-'''''
+`````
 
 Notes adalah catatan oleh pihak pengirim/penjual dan penerima/costumer produk.
 
@@ -193,10 +207,10 @@ Penjelasan field :
 | 1  |                      | Tidak           | Catatan oleh pihak penerima/costumer produk                             |
 +----+----------------------+-----------------+-------------------------------------------------------------------------+
 
-
+ .. _pages_op_others:
 
 Others
-''''''
+``````
 
 Others adalah...
 
@@ -211,3 +225,9 @@ Penjelasan field :
 | 1  | Delivery Order       | Tidak           | Nomor delivery order produk                                             |
 +----+----------------------+-----------------+-------------------------------------------------------------------------+
 
+
+.. _pages_op_print_out:
+
+Print Output
+''''''''''''
+.. image:: /img/op-printout.png

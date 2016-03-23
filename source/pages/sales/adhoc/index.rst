@@ -1,23 +1,37 @@
+.. _pages_adhoc:
+
 ADHOC ORDER REQUEST
 ===================
 
 
-Contents:
+.. _pages_adhoc_penjelasan:
+
+Penjelasan
+----------
 
 Adhoc Order merupakan modul Pemesanan yang dilakukan tanpa P.O diawal namun telah mendapat kesepakatan  antar Suprabakti dan Customer.
 
+.. _pages_adhoc_flow_adhoc_order_request:
 
 Flow Adhoc Order Request
+------------------------
 
 .. image:: /img/adhoc-flow.png
 
 
 (penjelasan flow)
 
+.. _pages_adhoc_interface:
 
-Form Adhoc Order Request :
+Tampilan / Interface
+--------------------
 
-.. image:: /img/adhoc-form.png
+.. _pages_adhoc_form_adhoc_order_request:
+
+Form Adhoc Order Request
+''''''''''''''''''''''''
+
+.. image:: /img/adh-form.png
 
 
 
@@ -61,8 +75,10 @@ Penjelasan Field:
 
 Pada form tersebut terdapat **5 Tab**, yaitu :
 
+.. _pages_adhoc_detail_item:
+
 Detail Item
------------
+```````````
 
 Detail item merupakan .................................
 
@@ -91,8 +107,11 @@ Field yang ada pada **Detail Item**:
 +---+-----------------------+---------------+------------------------------------------------------------------------------------------+
 
 
+
+.. _pages_adhoc_data_material:
+
 DATA MATERIAL
-^^^^^^^^^^^^^
++++++++++++++
 
 Data Material merupakan..............
 
@@ -119,8 +138,10 @@ Field yang ada pada **Data Material**:
 +---+-----------------------+---------------+------------------------------------------------------------------------------------------+
 
 
+.. _pages_adhoc_work_order:
+
 Work Order
-----------
+``````````
 
 Work Order merupakan .................................
 
@@ -151,8 +172,10 @@ Field yang ada pada **Work Order**:
 +---+-----------------------+---------------+------------------------------------------------------------------------------------------+
 
 
+.. _pages_adhoc_term_of_payment:
+
 Term Of Payment
----------------
+```````````````
 
 Term Of Payment merupakan .................................
 
@@ -173,8 +196,10 @@ Field yang ada pada **Term Of Payment**:
 +---+-----------------------+---------------+------------------------------------------------------------------------------------------+
 
 
+.. _pages_adhoc_scope_of_work:
+
 Scope Of Work
--------------
+`````````````
 
 Scope Of Work merupakan .................................
 
@@ -195,8 +220,10 @@ Field yang ada pada **Scope Of Work**:
 +---+-----------------------+---------------+------------------------------------------------------------------------------------------+
 
 
+.. _pages_adhoc_term_condition:
+
 Term Condition
---------------
+``````````````
 
 Term Condition merupakan .................................
 

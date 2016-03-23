@@ -1,16 +1,21 @@
+.. _pages_order:
+
 ORDER
 =====
 
+.. _pages_order_penjelasan:
 
-Quotation / RFQ
----------------
-Contents:
+Penjelasan
+----------
 
 Quotation/RFQ (Request For Quotation), merupakan modul untuk input penawaran penjualan ke Customer.
 Modul ini dapat di akses pada menu "Sales" -> "Sales" -> "RFQ"
 
 
+.. _pages_order_flow_quotation:
+
 Flow Quotation
+--------------
 
 .. image:: /img/quotation.png
 
@@ -20,8 +25,15 @@ Flow Quotation
 #. Selanjutnya setelah penawaran diterima oleh Customer maka akan ada proses negosiasi, dari proses tersebut ada beberapa kemungkinan yaitu Revisi Penawaran, Deal, dan Tidak Deal / Lose a. Jika ingin merevisi penawaran maka user dapat merevisi penawaran di sistem lalu mengkonfirm kembali untuk mencetak revisi penawaran b. Jika pada saat negosiasi menghasilkan kesepakatan Jual Beli maka ketika turun PO dari Customer user dapat mengubah status penawaran menjadi Sale Order. Jika tidak ada kesepakatan atas penawaran tersebut maka user dapat mengubah status dokumen menjadi **lose** pada penawaran tersebut
 
 
+.. _pages_order_interface:
 
-Form Quotation :
+Tampilan / Interface
+--------------------
+
+.. _pages_order_form_quotation:
+
+Form Quotation
+''''''''''''''
 
 .. image:: /img/order-rfq.png
 
@@ -78,8 +90,10 @@ Penjelasan Field:
 
 Pada form tersebut terdapat **3 Tab**, yaitu :
 
+.. _pages_order_sale_items:
+
 Sale Items
-^^^^^^^^^^
+``````````
 
 
 Sale items merupakan item sale dari suatu penawaran.
@@ -127,9 +141,10 @@ Field yang ada pada **Sale Item**:
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
 
+.. _pages_order_material_line:
 
 Material Line
-^^^^^^^^^^^^^
+`````````````
 
 Material line merupakan data Material yang akan di supply pada suatu order baik material berupa barang maupun barang.
 Pada material line harus di deskripsikan material penyusun / consist of / including material yang akan di berikan kepada customer.
@@ -159,9 +174,10 @@ Field yang ada pada **Material Line** :
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
 
+.. _pages_order_revision_history:
 
 Revision History
-^^^^^^^^^^^^^^^^
+````````````````
 
 Berisi log history revisi yang pernah dilakukan, log berisi alasan mengapa dilakukan revisi dan nilai yang di revisi
 
@@ -186,9 +202,10 @@ Field yang ada pada **Revision History** :
 +---+-----------------------+---------------+--------------------------------------------------------------------------------------------------------------------+
 
 
+.. _pages_order_scope_of_work:
 
 Scope Of Work
-^^^^^^^^^^^^^
+`````````````
 
 Pada tab **Scope of Work** terdapat field Detail scope of work baik dari Sisi Suprabakti maupun sisi Customer. Field ini diisi untuk menjelaskan scope lingkup pekerjaan yang dilakukan baik di sisi Customer maupun Suprabakti Mandiri.
 
@@ -207,6 +224,3 @@ Contoh Kasus
 -. Membuat penawaran Penjualan Material yang material berasal dari Site
 
 
-
-SALE ORDER
-----------
