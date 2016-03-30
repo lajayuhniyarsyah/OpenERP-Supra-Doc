@@ -21,7 +21,7 @@ Flow Delivery Note
 Flow
 ''''
 
-.. image:: /img/dnflow.png
+.. image:: /img/dn-normal-flow.png
 
 
 #. Flow dimulai setelah melewati proses **Order Preparation** dimana barang telah dipacking oleh warehouse staff. 
@@ -30,19 +30,171 @@ Flow
 #. Selanjutnya sales terlebih dahulu meminta approve (persetujuan) dan tanda tangan dari manager atau bagian lain yang bersangkutan.
 #. Selanjutnya setelah surat jalan disetujui maka akan ada proses negosiasi dengan customer, dari proses tersebut ada beberapa kemungkinan yaitu meng-cancel surat jalan karena adanya pembatalan pemesanan, meng-postpone surat jalan karena customer meminta barang untuk di tunda pengirimannya terlebih dahulu, atau validasi surat jalan kepada bagian warehouse yang berarti barang telah keluar dari gudang dan dikirim pada customer. 
 
+.. _page_dn_action:
+
+Action
+''''''
+
+.. _pages_dn_action_input:
+
+Input Surat Jalan
+`````````````````
+
+==================== === =================================================================================================
+Flow Sebelumnya      :   Admin Warehouse mendapat notfikasi Bahwa Barang sudah disiapkan melalui Dokumen Order Preparation
+Validasi             :   - Dokumen OP sudah berstatus "Done"
+                         - Qty Sesuai Dokumen OP
+Interface            :   Tombol "Create", Form Delivery Note
+Jika Action Sukses   :   Muncul Form, Data tersimpan jika sudah mengklik tombol "Save", status dokumen = 'Draft'
+Jika Action Gagal    :   Muncul Pop Up Message Warning
+User                 :   Admin Warehouse
+Deskripsi            :   Menginput Surat Jalan berdasarkan Dokumen Order Preparation yang sudah Siap.
+==================== === =================================================================================================
+
+.. _pages_dn_action_submit:
+
+Submit
+````````
+
+==================== = ===================================================================================================================================
+Flow Sebelumnya      : Input Surat Jalan
+Validasi             : Isi Dokumen Cocok dengan dokumen Order Preparation
+Interface            : Tombol "Submit"
+Jika Action Sukses   : - Status berubah menjadi "Submited"
+                       - Dokumen tidak dapat di edit / update / ubah
+Jika Action Gagal    : Muncul Pop Up Message Warning
+User                 : Admin Warehouse
+Deskripsi            : Mensubmit dokumen surat jalan dari Draft agar dapat di proses ke flow selanjutnya, selain itu agar draft surat jalan dapat di print
+==================== = ===================================================================================================================================
+
+
+Submit adalah action untuk mensubmit dokumen yang telah diinput. Jika dokumen telah di submit maka dokumen tidak dapat di modifikasi.
+Submit digunakan untuk merubah state dari draft menjadi submited.
+Ketika dokumen berstatus "Submited" maka artinya dokumen siap di print dan di akan direview oleh Admin Manager
+
+.. _pages_dn_action_set_draft:
+
+Set Draft
+`````````
+
+==================== = =======================================================================================
+Flow Sebelumnya      : Submit
+Validasi             : - Qty
+Interface            : Tombol "Set Draft"
+Jika Action Sukses   : - Status dokumen menjadi "Draft"
+                       - Dokumen dapat di edit / update / revisi
+Jika Action Gagal    : - Status dokumen tidak berubah
+                       - Muncul Pesan Error
+User                 : Admin SPV/Manager
+Deskripsi            : Action untuk merevisi surat jalan yang sudah di submit pada sistem
+==================== = =======================================================================================
+
+
+.. _pages_dn_action_print_surat_jalan:
+
+Print Surat Jalan
+`````````````````
+
+==================== = ==============================================================================================================================
+Flow Sebelumnya      : Submit
+Validasi             : 
+Interface            : Tombol "Print"
+Jika Action Sukses   : - Muncul pada display Print Output yang dapat di cetak ke template Surat Jalan
+Jika Action Gagal    : - Muncul Error pada Layar
+User                 : Admin Warehouse
+Deskripsi            : Action untuk print surat jalan yang sudah di submit pada sistem
+==================== = ==============================================================================================================================
+
+.. _pages_dn_action_approval:
+
+Approval Surat Jalan
+````````````````````
+
+==================== = ==============================================================================================================================
+Flow Sebelumnya      : Print Surat Jalan
+Validasi             : - Manual
+Interface            : Manual
+Jika Action Sukses   : -
+Jika Action Gagal    : -
+User                 : Admin SPV & Manager
+Deskripsi            : Action ini menunjukkan proses approval surat jalan. Approval dilakukan secara manual. Dokumen  surat Jalan yang sebelumnya sudah di print oleh "Admin Warehouse" di ajukan ke Admin SPV dan Manager untuk di tandatangani. Selama proses tanda tangan maka SPV dan Manager akan memvalidasi ke absahan surat jalan yang akan di proses dengan hasil print out. Jika surat jalan sudah valid maka user Admin SPV dan Manager akan mentandatangani Surat Jalan dan memberi stempel bahwa barang sudah dapat di deliver ke Customer. Namun jika barang belum dapat dikirim ke Customer dengan beberapa alasan (menunggu barang complete / menunggu pembayaran/ dll) maka Admin SPV dan Manager dapat mentandatangani dan memberi Cap Label "Postpone" pada Surat Jalan
+==================== = ==============================================================================================================================
+
+
+
 .. _pages_dn_postpone:
 
 Postpone
-''''''''
+````````
 
-Pada saat customer memilih untuk menunda (postpone) pengiriman barang, maka terdapat flow dari proses postpone tersebut  
+==================== = ==============================================================================================================================
+Flow Sebelumnya      : Menerima Dokumen Surat Jalan
+Validasi             : Dokumen Surat Jalan telah ditandatangani / disetujui untuk di Tahan pengirimannya.
+Interface            : Tombol "Postpone"
+Jika Action Sukses   : - Status berubah menjadi "Postpone"
+                       - Stock item sudah berkurang
+Jika Action Gagal    : - Muncul Pop Up Message Warning
+                       - Status dokumen tidak berubah menjadi "Postpone"
+User                 : Warehouse Staff
+Deskripsi            : Action ini digunakan untuk menahan dokumen pengiriman, sehigga pengiriman tidak dilakukan namun stock tetap tertahan sehingga tidak bisa di ambil untuk memenuhi permintaan lain. Dalam action ini user Warehouse Staff akan menerima dokumen surat jalan yang di beri label "Postpone" yang menandakan bahwa item delivery tersebut sudah di proses surat jalan namun ditahan pengirimannya atas perintah Admin Manager.
+==================== = ==============================================================================================================================
+
+
+Untuk proses kelanjutan pengiriman maka diberlakukan flow :
+
 
 .. image:: /img/dnpostponeflow.png
 
-#. Flow dimulai dengan bagian warehouse mendapatkan surat jalan penundaan dari barang yang akan dikirim.
-#. Selanjutnya proses dilanjutkan dengan negosiasi kembali dengan user, dari proses tersebut ada beberapa kemungkinan yaitu pembatalan (cancel) pengiriman barang, Re-packing item dimana pada proses ini paket dibongkar ulang untuk melakukan penambahan atau mengganti barang yang akan dikirim sesuai dengan permintaan customer, untuk proses Re-packing harus kembali melakukan proses Order preparation, dan kemungkinan terakhir yaitu melanjutkan kembali proses dari surat jalan.   
-#. Dalam melanjutkan kembali proses surat jalan terdapat dua kemungkinan sebelum meminta tanda tangan dan approve (persetujuan) kembali kepada pihak manager atau bagian lain yang bersangkutan, dimana sales dapat tetap menggunakan nomor surat jalan yang lama atau menggantinya dengan surat jalan yang baru dengan me-reload nomor dokumen.
-#. Setelah surat jalan disetujui maka akan ada proses negosiasi kembali dengan customer, dari proses tersebut ada beberapa kemungkinan yaitu meng-cancel surat jalan karena adanya pembatalan pemesanan, meng-postpone kembali surat jalan, atau validasi surat jalan kepada bagian warehouse yang berarti barang telah keluar dari gudang dan dikirim pada customer.
+
+
+.. _pages_dn_action_print_surat_jalan:
+
+Validate Surat Jalan
+````````````````````
+
+==================== = ==============================================================================================================================
+Flow Sebelumnya      : Menerima Dokumen Surat Jalan
+Validasi             : - Surat jalan dapat di validate **jika surat jalan telah ditandatangani dan di beri keterangan bahwa item / package sudah diijinkan untuk keluar / dikirim.
+Interface            : Tombol "Validate"
+Jika Action Sukses   : Status dokumen menjadi "Done"
+Jika Action Gagal    : - Muncul Pesan Error pada Layar
+User                 : Warehouse Staff
+Deskripsi            : Action ini digunakan saat Staff Warehouse menerima surat jalan printah untuk pengiriman barang.
+==================== = ==============================================================================================================================
+
+
+.. _pages_dn_action_cancel:
+
+Cancel Surat Jalan
+````````````````````
+
+==================== = ==============================================================================================================================
+Flow Sebelumnya      : Menerima Dokumen Surat Jalan
+Validasi             : - Surat jalan dapat di validate **jika surat jalan telah ditandatangani dan di beri keterangan bahwa item / package **tidak diijinkan untuk dikirim dan untuk di bongkar packingnya sehingga dapat digunakan order lain**
+Interface            : Tombol "Cancel"
+Jika Action Sukses   : Status dokumen menjadi "Cancel"
+Jika Action Gagal    : - Muncul Pesan Error pada Layar
+User                 : Warehouse Staff
+Deskripsi            : Action ini digunakan saat Staff Warehouse menerima surat jalan printah untuk cancel surat jalan.
+==================== = ==============================================================================================================================
+
+
+.. _pages_dn_action_repacking:
+
+Repacking Surat Jalan
+````````````````````````
+
+==================== = ==============================================================================================================================
+Flow Sebelumnya      : Postpone Surat Jalan
+Validasi             : Dokumen Surat Jalan telah ditandatangani / disetujui untuk di Tahan pengirimannya dan diperintahkan untuk re packing order item untuk mengurangi/menambah/memodifikasi item yang ada di packing.
+Interface            : Tombol "Cancel"
+Jika Action Sukses   : Status dokumen menjadi "Cancel"
+Jika Action Gagal    : - Muncul Pesan Error pada Layar
+User                 : Warehouse Staff
+Deskripsi            : Action ini dijalankan ketika sebelumnya terdapat perintah dari Manager Admin untuk membongkar packing untuk ditambahkan/dikurangkan/dimodifikasi item dalam packing tersebut. 
+==================== = ==============================================================================================================================
+
+
 
 .. _pages_dn_interface:
 

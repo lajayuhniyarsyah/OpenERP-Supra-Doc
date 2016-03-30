@@ -10,8 +10,7 @@ Contents:
 
 .. toctree::
    :maxdepth: 4
-
-   pertamakali
+   
    pages/sales/index
    pages/faq/index
 

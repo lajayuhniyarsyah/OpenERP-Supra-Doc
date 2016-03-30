@@ -1,6 +1,8 @@
+.. _faq_do:
 Mempersiapkan dan Mengirim Permintaan Barang Pesanan
 ====================================================
 
+.. _faq_do_op_create:
 
 Membuat Doc Order Preparation
 -----------------------------
@@ -83,9 +85,10 @@ Product yang tidak dibutuhkan juga dapat di hapus dari list order line
 .. image:: /img/print-out-op.png
 
 
+.. _faq_do_op_batch:
 
-Order Preparation Untuk Product Batch / Potongan
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Membuat Order Preparation Untuk Product Batch / Potongan
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Click Button Create 
 
@@ -133,6 +136,8 @@ Click Button Create
 
 .. image:: /img/print-out-product-batch.png
 
+.. _faq_do_op_other_item:
+
 Order Preparation dengan supply barang berbeda dari permintaan PO
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -164,12 +169,12 @@ Order Preparation dengan supply barang berbeda dari permintaan PO
 .. image:: /img/print-out-op-supply.png
 
 
-
+.. _faq_do_dn_create:
 
 Membuat Dokumen Surat Jalan / Delivery Note (DN)
 ------------------------------------------------
 
-Untuk membuat dokumen Surat Jalan dapat di lihat pada bagian :ref:`pages_dn_form`.
+Untuk membuat document surat Jalan user harus mengisi form Delivery Note seperti yang sudah di jelaskan pada :ref:`pages_dn_form`.
 
 
 Postpone Pengiriman / Menahan Pengiriman
