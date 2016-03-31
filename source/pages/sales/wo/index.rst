@@ -1,15 +1,22 @@
-SBM Work Order
-==============
+.. _pages_wo:
+
+Work Order
+==========
 
 
-Contents:
+.. _pages_wo_penjelasan:
+
+Penjelasan
+----------
 
 SBM Work Order, merupakan modul untuk.....
 
 
 
+.. _pages_wo_flow_sbm_work_order:
 
 Flow SBM Work Order
+-------------------
 
 .. image:: /img/Gm50U.jpg
 
@@ -24,7 +31,21 @@ Flow SBM Work Order
 5. Jika SPK sudah selesai maka ada pilihan Tagih dan Kirim Output. a. Tagih, berarti proses sebelumnya adalah berupa order jasa dan langsung diarahkan ke Invoicing. b. Kirim Output, berarti proses sebelumnya adalah order barang yang harus melalui proses Delivery Note. Jika proses Delivery Note Selesai baru melakukan penagihan dan langsung ke proses Invoicing.
 
 
-Form SBM Work Order :
+
+.. _pages_wo_interface:
+
+Interface / Tampilan
+--------------------
+
+.. _pages_wo_main_view:
+
+Tampilan Utama / Tabel / Tree
+'''''''''''''''''''''''''''''
+
+.. _pages_wo_form_sbm_work_order:
+
+Form SBM Work Order
+'''''''''''''''''''
 
 .. image:: /img/sbm-work-order-form.png
 
@@ -61,11 +82,14 @@ Penjelasan field :
 +----+---------------------------+-----------------+-------------------------------------------------------------------------+
 
 
+
+
 Pada form tersebut terdapat **2 Tab**, yaitu :
 
+.. _pages_wo_output_picking:
 
 Output Picking
---------------
+``````````````
 
 Output Picking merupakan......
 
@@ -101,9 +125,11 @@ Penjelasan field:
 
 Pada form tersebut terdapat **2 Tab**, yaitu :
 
+.. _pages_wo_data_material:
 
-> Data Material
-+++++++++++++++
+Data Material
++++++++++++++
+
 
 Data Material merupakan......
 
@@ -128,8 +154,10 @@ Penjelasan field:
 +----+---------------------------+-----------------+-------------------------------------------------------------------------+
 
 
-> Output Picking
-++++++++++++++++
+.. _pages_wo_output_picking:
+
+Output Picking
+++++++++++++++
 
 Output Picking merupakan.......
 
@@ -152,9 +180,10 @@ Penjelasan field:
 +----+---------------------------+-----------------+-------------------------------------------------------------------------+
 
 
+.. _pages_wo_others:
 
 Others
-------
+``````
 
 Others merupakan......
 
@@ -179,3 +208,9 @@ Penjelasan field:
 +----+---------------------------+-----------------+-------------------------------------------------------------------------+
 
 
+
+
+Print Output
+''''''''''''
+
+.. image:: /img/wo-printout-raw.png

@@ -102,3 +102,73 @@ Jika sudah maka akan tampil seperti pada gambar.
 Jika sudah maka akan tampil seperti gambar dibawah ini.
 
 .. image:: /img/wo_25.png
+
+
+
+
+Berikut ini ada 3 contoh kasus pada pembuatan SPK:
+
+
+SPK Fabrikasi Barang
+--------------------
+
+.. image:: /img/wo_fabrikasi_barang.png
+
+Ada beberapa hal yang harus diperhatikan dalam membuat SPK Fabrikasi Barang, yaitu:
+
+1. Field: Source Type. Source Type digunakan untuk menentukan sumber SPK yang akan dibuat. Field ini bersifat required.
+
+2. Field: Sale Order. Sale Order adalah nomor SO yang telah dibuat sebelumnya pada menu Sales -> Sales Orders. Perlu diperhatikan bahwa jika sudah mengisi field ini, bebepa field lainnya akan otomatis terisi, dan pastikan Output Picking untuk produknya berupa barang. Field ini bersifat required. 
+
+3. Field: Work Location. Work Location adalah tempat dimana pekerjaan dilakukan. Pemilihan Work Location harus Work Shop. Field ini bersifat required.
+
+4. Field: Internal Handler Location. Internal Handler Location adalah tempat resource yang akan ikut serta dalam SPK. Field ini bersifat required.
+
+
+
+
+SPK Manpower
+------------
+
+Berikut hal-hal yang harus diperhatikan dalam membuat SPK Manpower, yaitu:
+
+1. Seperti pada penjelasan sebelumnya bahwa field yang berwarna biru adalah required atau harus diisi.
+
+.. image:: /img/wo-man-power-1.png
+
+2. Pada contoh kasus ini, SO diambil dari nomor 00185 yang didalamnya terdapat produk Carry Roller, Frame, dan Instalasi/Pemasangan.
+
+.. image:: /img/print-so-1.png
+
+(Gambar Printout SO 00185 - Hal 1)
+
+.. image:: /img/print-so-2.png
+
+(Gambar Printout SO 00185 - Hal 2)
+
+Produk yang digunakan untuk membuat SPK Manpower adalah yang bertanda MERAH.
+
+3. Kembali ke form Work Order, Product Out Picking yang ditandai MERAH adalah yang harus Anda perhatikan. Produk tersebut bukan berupa barang, melainkan berupa jasa.
+
+.. image:: /img/wo-man-power-2.png
+
+Produk yang terdapat pada tab Output Picking tersebut berasal dari SO 00185.
+
+4. Selanjutnya adalah klik produk Instalasi/Pemasangan untuk menambahkan detail produk. Maka akan tampil seperti dibawah ini.
+
+.. image:: /img/wo-man-power-3.png
+
+Pada tab Data Material, isi masing-masing fieldnya. a. Product-nya adalah MANPOWER. b. Description, pada field ini tambahkan keterangan tentang manpower pada SPK yang sedang dibuat. c. Qty, jumlah manpower. d. UoM, satuan manpower-nya adalah orang. e. Costumer Materials, jika material yang digunakan berasal dari Costumer.
+
+Jika selesai klik Save.
+
+
+
+SPK Site Workshop
+-----------------
+
+Berikut ini adalah cara membuat SPK untuk contoh kasuk Work Location pada Work Shop.
+
+.. image:: /img/wo-work-location-work-shop.png
+
+Isi semua field pada form-nya. Hal yang perlu diperhatikan adalah pada field Work Location, pilih Work Shop. Artinya lokasi tempat kerja berada di Workshop.
