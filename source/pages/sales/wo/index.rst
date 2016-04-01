@@ -9,13 +9,13 @@ Work Order
 Penjelasan
 ----------
 
-SBM Work Order, merupakan modul untuk.....
+Work Order, merupakan modul untuk membuat doc surat perintah kerja yang dilakukan oleh Admin HO sebagai dasar doc untuk melakukan pekerjaan dengan mendetailkan segala informasi yang dibutuhkan
 
 
 
 .. _pages_wo_flow_sbm_work_order:
 
-Flow SBM Work Order
+Flow Work Order
 -------------------
 
 .. image:: /img/Gm50U.jpg
@@ -30,6 +30,207 @@ Flow SBM Work Order
 
 5. Jika SPK sudah selesai maka ada pilihan Tagih dan Kirim Output. a. Tagih, berarti proses sebelumnya adalah berupa order jasa dan langsung diarahkan ke Invoicing. b. Kirim Output, berarti proses sebelumnya adalah order barang yang harus melalui proses Delivery Note. Jika proses Delivery Note Selesai baru melakukan penagihan dan langsung ke proses Invoicing.
 
+
+
+Action Work Order
+-----------------
+
+Input Work Order
+''''''''''''''''
+
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Flow Sebelumnya                 | : | Admin HO mendapatkan Notifikasi / Informasi Bahwa harus membuat doc Work Order (SPK)     |
+|                                 |   | Dimana dasar pembuatan Work Order                                                        |
+|                                 |   | 1. Project                                                                               |
+|                                 |   | 2. Sales Order                                                                           |
+|                                 |   | 3. Adhoc Order Request                                                                   |
+|                                 |   | 4. Internal Request                                                                      |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Validasi                        | : | 1. Adanya Source Type                                                                    |
+|                                 |   | 2. Adanya Work Location                                                                  |
+|                                 |   | 3. Adanya Internal Handler Location                                                      |
+|                                 |   | 4. Adanya Output Picking                                                                 |
+|                                 |   | 5. Adanya Raw Material                                                                   |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Interface                       | : | Tombol "Create", Form Work Order                                                         |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Sukses              | : | Muncul Form, Data tersimpan jika sudah mengklik tombol "Save", status dokumen = 'Draft'  |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Gagal               | : | Muncul Pop Up Message Warning                                                            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| User                            | : | Admin HO / Admin Support                                                                 |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Deskripsi                       | : | Input Doc Work Order Berdasarkan permintaan  yang telah di approve oleh manager          |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+
+
+Confirm Work Order
+''''''''''''''''''
+
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Flow Sebelumnya                 | : | Input Doc Work Order Success                                                             |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Validasi                        | : | Isi Doc sudah sesuai dengan kebutuhan system                                             |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Interface                       | : | Tombol "Confirm" Form Work Order status 'Draft'                                          |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Sukses              | : | 1. Status doc berubah menjadi "Confirmed"                                                |
+|                                 |   | 2. Doc Work Order tidak dapat di edit / update / ubah                                    |
+|                                 |   | 3. Terbentuknya Request No Doc Work Order                                                |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Gagal               | : | Muncul Pop Up Message Warning                                                            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| User                            | : | Admin HO / Admin Support                                                                 |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Deskripsi                       | : | Menconfirm doc Work Order dari Draft agar dapat di proses ke flow selanjutnya            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+
+
+
+
+Set To Draft Work Order
+'''''''''''''''''''''''
+
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Flow Sebelumnya                 | : | Confirm doc Work Order / Approve Work Order                                              |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Validasi                        | : | -                                                                                        |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Interface                       | : | Tombol "Set To Draft","Check WO", "Cancel" Form Work Order status 'Confirmed'            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Sukses              | : | 1. Status doc berubah menjadi "Draft"                                                    |
+|                                 |   | 2. Doc Work Order dapat di edit / update / ubah                                          |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Gagal               | : | Muncul Pop Up Message Warning                                                            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| User                            | : | Admin Supervisor                                                                         |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Deskripsi                       | : | Melakukan set to draft doc Work Order dari confirmed agar dapat di edit kembali          |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+
+
+Check Work Order
+''''''''''''''''
+
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Flow Sebelumnya                 | : | Confirm doc Work Order / Approve Work Order                                              |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Validasi                        | : | Isi Doc sudah sesuai dengan kebutuhan system                                             |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Interface                       | : | Tombol "Set To Draft","Check WO", "Cancel" Form Work Order status 'Confirmed'            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Sukses              | : | 1. Status doc berubah menjadi "Approved"                                                 |
+|                                 |   | 2. Doc Work Order Tidak dapat di edit / update / ubah                                    |
+|                                 |   | 2. Terbentuk nya SPK No                                                                  |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Gagal               | : | Muncul Pop Up Message Warning                                                            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| User                            | : | Admin HO                                                                                 |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Deskripsi                       | : | Melakukan Check Work Order dari Confirmed ke Approved agar dapat di proses ke next flow  |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+
+
+Cancel Work Order
+'''''''''''''''''
+
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Flow Sebelumnya                 | : | Confirm doc Work Order / Approve Work Order                                              |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Validasi                        | : | Work Order sudah di Approve untuk di cancel di system                                    |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Interface                       | : | Tombol "Set To Draft","Check WO", "Cancel" Form Work Order status 'Confirmed'            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Sukses              | : | 1. Status doc berubah menjadi "cancel"                                                   |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Gagal               | : | Doc Tidak dapat ter cancel                                                               |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| User                            | : | Admin Supervisor / Admin Manager                                                         |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Deskripsi                       | : | Melakukan Cancel Work Order Confirmed ke Cancel                                          |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+
+
+Validate Work Order
+'''''''''''''''''''
+
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Flow Sebelumnya                 | : | Approve doc Work Order                                                                   |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Validasi                        | : | Isi Doc sudah sesuai dengan kebutuhan system                                             |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Interface                       | : | Tombol "Set To Draft","Validate WO", "Cancel", "Print Work order"                        |
+|                                 |   | Form Work Order status 'Approved'                                                        |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Sukses              | : | 1. Status doc berubah menjadi "Second Approved"                                          |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Gagal               | : | Muncul Pop Up Message Warning / Doc Tidak Dapat di Validate                              |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| User                            | : | Admin Supervisor / Admin Manager                                                         |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Deskripsi                       | : | Melakukan Validate Work Order Approved ke Second Approved                                |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+
+
+Print Work Order
+''''''''''''''''
+
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Flow Sebelumnya                 | : | Approve doc Work Order                                                                   |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Validasi                        | : | -                                                                                        |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Interface                       | : | Tombol "Print Work Order"                                                                |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Sukses              | : | Muncul pada display Print Output yang dapat di cetak                                     |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Gagal               | : | Muncul Error Pada Layar                                                                  |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| User                            | : | Admin HO / Admin Support / Admin Supervisor / Admin Manager / Admin Workshop             |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Deskripsi                       | : | Action untuk print Work Order yang sudah di approve / Validate pada sistem               |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+
+
+
+Process Work Order
+''''''''''''''''''
+
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Flow Sebelumnya                 | : | Approved doc Work Order                                                                  |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Validasi                        | : | Isi Doc sudah sesuai dengan kebutuhan system                                             |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Interface                       | : | Tombol "Process Work Order"                                                              |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Sukses              | : | 1. Status doc berubah menjadi "Validate"                                                 |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Gagal               | : | Muncul Pop Up Message Warning / Doc Tidak Dapat di process                               |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| User                            | : | Admin Manager                                                                            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Deskripsi                       | : | Melakukan Process Work Order, Second Validate ke Validate                                |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+
+
+Finish Work Order
+''''''''''''''''''
+
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Flow Sebelumnya                 | : | Second Approved doc Work Order                                                           |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Validasi                        | : | Isi Doc sudah sesuai dengan kebutuhan system                                             |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Interface                       | : | Tombol "Finish Work Order"                                                               |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Sukses              | : | 1. Status doc berubah menjadi "Done"                                                     |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Jika Action Gagal               | : | Muncul Pop Up Message Warning / Doc Tidak Dapat di Finish process                        |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| User                            | : | Admin Workshop                                                                           |
++---------------------------------+---+------------------------------------------------------------------------------------------+
+| Deskripsi                       | : | Melakukan Finish Work Order, Validate ke Done                                            |
++---------------------------------+---+------------------------------------------------------------------------------------------+
 
 
 .. _pages_wo_interface:
@@ -91,7 +292,7 @@ Pada form tersebut terdapat **2 Tab**, yaitu :
 Output Picking
 ``````````````
 
-Output Picking merupakan......
+Output Picking merupakan Informasi data pekerjaan dan product yang akan dijadikan dasar pengerjaan atau pembuatan product pada SPK 
 
 
 .. image:: /img/sbm-work-order-output-picking.png
@@ -131,7 +332,7 @@ Data Material
 +++++++++++++
 
 
-Data Material merupakan......
+Data Material merupakan Detail Item yang menjalaskan lebih detail apa saja yang dibutuhkan dalam satu pekerjaan atau dalam menyiapkan barang, semua dapat dijelaskan dalam detail material
 
 .. image:: /img/sbm-work-order-output-picking-raw-materials-data-material.png
 
@@ -185,7 +386,7 @@ Penjelasan field:
 Others
 ``````
 
-Others merupakan......
+Others merupakan informasi tambahan untuk users siapa yang Approve, Validate dan General Approver
 
 
 .. image:: /img/sbm-work-order-others.png
