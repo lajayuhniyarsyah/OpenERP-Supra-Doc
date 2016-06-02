@@ -17,7 +17,7 @@ Untuk membuat penawaran terhadap produk dan jasa terdapat langkah-langkah yang h
 
 - Pada modul RFQ berisi list penawaran penjualan ke Customer, Untuk membuat penawaran penjualan baru tekan tombol **Create** dan masuk pada tampilan form **Quotation**  
 
-.. image:: /img/formquotation.png 
+.. image:: /img/mp-formquotation.png 
 
 - Form **Quotation** berfungsi untuk melakukan proses penginputan penawaran penjualan ke Customer. 
 
@@ -27,7 +27,7 @@ Untuk membuat penawaran terhadap produk dan jasa terdapat langkah-langkah yang h
 
 - Maka akan masuk pada tampilan form **Searh: Costomer**, kemudian input nama CV atau perusahaan yang dicari. 
 
- .. image:: /img/mp-mp-searchcustomer.png 
+ .. image:: /img/mp-searchcustomer.png 
 
  - Selanjutnya terdapat field Delivery Address yang berisi alamat pengiriman penawaran penjualan, untuk field ini telah tersedia dengan daftar alamat pengiriman dari perusahaan yang bersangkutan. Namun, jika tidak tersedia dapat meng-create alamat dari perusahaan tersebut.
 

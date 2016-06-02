@@ -147,14 +147,14 @@ Untuk proses kelanjutan pengiriman maka diberlakukan flow :
 
 
 
-.. _pages_dn_action_print_surat_jalan:
+.. _pages_dn_action_validate_jalan:
 
 Validate Surat Jalan
 ````````````````````
 
 ==================== = ==============================================================================================================================
 Flow Sebelumnya      : Menerima Dokumen Surat Jalan
-Validasi             : - Surat jalan dapat di validate **jika surat jalan telah ditandatangani dan di beri keterangan bahwa item / package sudah diijinkan untuk keluar / dikirim.
+Validasi             : - Surat jalan dapat di validate **jika surat jalan telah ditandatangani dan di beri keterangan bahwa item / package sudah diijinkan untuk keluar / dikirim
 Interface            : Tombol "Validate"
 Jika Action Sukses   : Status dokumen menjadi "Done"
 Jika Action Gagal    : - Muncul Pesan Error pada Layar
@@ -205,6 +205,11 @@ Interface / Tampilan
 
 Tampilan Utama / Tabel / Tree
 '''''''''''''''''''''''''''''
+
+Tampilan pada setelah mengklik menu **Delivery Note** 
+
+.. image:: /img/dn-interface-tree.png
+
 
 .. _pages_dn_form:
 

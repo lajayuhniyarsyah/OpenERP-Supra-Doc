@@ -19,9 +19,15 @@ Modul ini dapat di akses pada menu "Sales" -> "Sales" -> "Order Preparation"
 Flow Order Preparation
 ----------------------
 
-.. image:: /img/quotation.png
+.. image:: /img/op-flow.png
 
-(Penjelasan tentang Order Preparation di skip)
+Penjelasan Flow:
+
+#. Flow dimulai dengan user **admin ho** menginput dokumen Order Preparation pada Sistem ERP.
+#. Setelah semua diinput **admin ho** akan memprint dokumen tersebut dan menginformasikan perintah penyiapan barang pada Warehouse
+#. Pada user **admin warehouse** jika dokumen sudah jelas dan dapat dimenegerti maka user **admin warehouse** dapat merubah state dokumen dengan mengklik tombol **Approve** pada sistem untuk menandakan bahwa dokumen sedang diproses oleh gudang. Pada saat state ini **Admin HO** tidak dapat merubah/merevisi dokumen tersebut.
+#. Jika item barang sudah siap maka user **Admin Warehouse** harus merubah state dokumen dengan **mengklik tombol Validate**.
+#. Setelah status dokumen berubah maka team **Admin HO** dapat meneruskan flow ke Surat Jalan
 
 
 .. _pages_op_interface:
