@@ -1,9 +1,16 @@
-Handing Penawaran dan Sale Order
-================================
+Handing Dokumen Penawaran dan Sale Order
+========================================
 
+.. _faq_membuat_penawaran:
 
 Membuat Penawaran (RFQ)
 -----------------------
+
+
+.. _faq_membuat_penawaran_step:
+
+Step by Step Input Penawaran pada ERP
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Untuk membuat penawaran terhadap produk dan jasa terdapat langkah-langkah yang harus dilakukan, dimana pembuatan penawaran dilakukan melalui ERP pada modul menu RFQ. Berikut merupakan tahap-tahap pembuatan penawaran :
 
@@ -128,9 +135,11 @@ Untuk membuat penawaran terhadap produk dan jasa terdapat langkah-langkah yang h
 - Terdapat field Note untuk memberikan catatan dari penawaran penjualan.
 
 
+.. _faq_membuat_penawaran_material_include_jasa:
 
 Membuat Penawaran Material Include Jasa
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
 Contoh Kasus :
 - Pada kasus ini dilakukan penawaran 82 Set SACI (Self Aligning Carry Idler) include jasa pemasangan.  
 
@@ -145,6 +154,8 @@ Contoh Kasus :
 - Melihat Picking Location berada pada daerah Pasar Kemis maka resource yang akan dipanggil akan berasal dari site Pasar Kemis.
 
 - Pada material item telah terisi dengan jasa yaitu **Installasi**, hal tersebut menunjukkan bahwa jasa tersebut telah ter-inculude sebagai bagian dari penawaran material.
+
+.. _faq_membuat_penawaran_material_include_material:
 
 Membuat Penawaran Jasa dengan Menetapkan Material yang akan digunakan
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -162,83 +173,3 @@ Contoh Kasus :
 .. image:: /img/mp-includematerial2.png
 
 - Pada material item telah terisi dengan penambahan material yaitu **[OHJIHE7I4] OHJI Hard E-7I 4 mm**, hal tersebut menunjukkan bahwa material tersebut telah ter-inculude sebagai bagian dari penawaran jasa.
-
-Konfirmasi Penawaran
---------------------
-
-Konfirmasi penawaran digunakan untuk mengkonfirmasi draft penawaran yang sudah di buat agar dapat di print dan dikirim ke Customer.
-yaitu dengan menekan tombol Confirm.
-
-.. image:: /img/mp-confirm.png
-
-
-Print Penawaran
----------------
-
-Print Penawaran dapat dilakukan setelah Konfirmasi Penawaran. Untuk mencetak data tekan tombol Print Quotation Web.
-
-.. image:: /img/mp-print.png
-
-Hasil data akan berbentuk file PDF dan siap untuk dicetak.
-
-.. image:: /img/mp-hasilprint.png
-
-Dengan begitu hasil cetak tersebut dapat digunakan sebagai penawaran penjualan pada Customer. Pada tahap berikutnya terjadi kembali negosiasi dengan Custommer.
-
-
-Revisi Penawaran
-----------------
-
-Pada suatu kasus Costomer meminta perubahan pada penawaran penjualan. Dengan begitu, hal yang harus dilakukan adalah melakukan revisi penawaran. langkah-langkah yang harus dilakukan yaitu 
-
-- Masuk kembali pada modul RFQ dan pilih draft penawaran penjualan untuk perusahaan bersangkutan. Untuk melakukan revisi tekan Revise.
-
-.. image:: /img/mp-revise.png
-
-- Maka akan masuk pada Form Reason / Explanation yang berisi catatan alasan perubahan penawaran penjualan.  
-
-.. image:: /img/mp-revisereason.png
-
-- Barulah setelah itu data penawaran kembali diubah sesuai dengan keinginan Customer. Dan tahap selanjutnya adalah kembali melakukan penginputan seperti pada tahap sebelumnya. Untuk melihat list revisi dari penawaran dapat melihat pada tab Revision History.
-
-.. image:: /img/mp-revisionhistory.png
-
-
-Cancel Penawaran / WIN / Lost
------------------------------
-
-Pada saat proses penawaran penjualan pada Customer terdapat beberapa kemungkinan yang akan terjadi yaitu pembatalan penawaran (Cancel), penawaran dimenangkan (Win), atau penawaran gagal (Lost).
-
-- Penawaran dibatalkan  ketika hasil dari proses penginputan data pada form Qutation belum sampai pada tahap dikonfirmasi. Untuk melakukan pembatalan dari penawaran penjualan yaitu dengan menekan tombol Cancel.
-
-.. image:: /img/mp-cancel.png
-
-- Dengan dilakukannya Cancel dari penawaran penjualan maka status dari penawaran telah berubah menjadi Cancel.
-
-.. image:: /img/mp-cancelst.png
-
-- Penawaran dimenangkan (Win) adalah kondisi dimana penawaran penjualan telah dikonfirmasi dan dicetak. Hasil dari penawaran penjualan tersebut disepakati oleh Customer.  
-
-- Untuk melakukan penginputan setelah penawaran disepakati yaitu dengan menekan tombol Win.
-
-.. image:: /img/mp-winorder.png
-
-- Hasil dari penginputan akan digunakan untuk penginputan pada modul Order Preparation. Dan status dari penawaran penjualan berubah menjadi Win.
-
-.. image:: /img/mp-winst.png
-
-- Penawaran gagal (Lost) adalah kondisi dimana penawaran penjualan telah dikonfirmasi dan dicetak. Namun, Hasil dari penawaran penjualan tersebut tidak disepakati oleh Customer.  
-
-- Untuk melakukan penginputan setelah penawaran gagal / kalah yaitu dengan menekan tombol Lost.
-
-.. image:: /img/mp-lost.png
-
-- Pada form Lost disertakan dengan penjelasan dan alasan dari gagalnya penawaran dan penjualan kepada Customer.
-
-- Dengan dilakukannya Lost berarti penawaran telah gagal dan status pada penawaran menjadi Lost.
-
-.. image:: /img/mp-lostst.png
-
-
-Mengkonversi Penawaran menjadi Sale Order / Membuat Sale Order
---------------------------------------------------------------

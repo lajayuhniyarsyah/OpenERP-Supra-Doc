@@ -10,7 +10,9 @@ Contents:
 
 .. toctree::
    :maxdepth: 4
-   
+
+   pages/about/index
+   pages/content/index
    pages/sales/index
    pages/faq/index
 
