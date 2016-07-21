@@ -26,6 +26,17 @@ Secara garis besar flow yang di terapkan dalam release PO adalah
 
 Penjelasan:
 
+1. Input / Draft
+   Input dilakukan oleh Staff Purchasing. Selama draft print out yang akan berlaku adalah draft PO (terdapat watermark “Draft”)
+2. Confirm & Print
+   Confirm dilakukan dengan mengklik “Confirm” dan setelah itu maka PO akan berubah statusnya menjadi “Waiting Approval”
+   Status Waiting Approval mengindikasikan bahwa draft PO sudah disubmit dan sedang dalam pengajuan ke Manager Purchase (Atau Management yang berhak mentandatangani/approval PO)
+   Jika PO yang di cetak tidak di approval maka Purchase Manger atau Bpk. Ary Ardianto (Staff Purchasing yang ditunjuk untuk berhak membuka PO menjadi Draft) dapat mengubah status PO menjadi draft dengan cara Klik tombol “Set to Draft”.
+3. Apporve
+   Pada saat PO ditandatangani maka Purchase Manager akan merubah Status PO di sistem menjadi “Purchase Order” dengan cara mengklik tombol “Approve Order”.
+   Status “Purchase Order” pada sistem mengindikasikan bahwa PO tersebut sudah di approval oleh Management dan sudah di proses release PO kepada supplier.
+
+
 1. Purchase Staff menginput PO pada modul ERP
 2. Purchase Staff mengkonfirm PO untuk selanjutnya dapat di Print/Cetak
 3. Setelah PO di cetak maka staff purchase harus meminta tanda tangan Purchase Manager
@@ -42,7 +53,7 @@ Merevisi PO
 Revisi PO yang belum di Approve/Belum Release
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Pada sub ini akan dijelaskan flow tata cara merevisi PO dimana PO tersebut belum pernah di approve / ditandatangani / disetujui oleh Manager. 
+Pada sub ini akan dijelaskan flow tata cara merevisi PO dimana PO tersebut belum pernah di approve / ditandatangani / disetujui oleh Manager (Pada sistem status nya masih **Waiting Approval**. 
 Pada kondisi ini juga revisi yang diberlakukan adalah revisi tanpa mengubah nomor dokumen.
 
 Berikut ini adalah flow activity diagramnya:
@@ -51,11 +62,12 @@ Berikut ini adalah flow activity diagramnya:
    :scale: 50%
    :alt: Flow Revisi PO - Belum Approval
 
-Penjelasan: 
+Penjelasan:
 
-1. Untuk merevisi PO yang belum di approve maka User Staff dapat melakukan perintaan (terpisah) baik via email kepada Purchase Manager ataupun SPV/Chief yang ditunjuk.
-2. Manager / SPV / staff yang ditunjuk akan membuka PO dan merubah status menjadi draft dengan cara mengklik tombol **Set to Draft** pada form Purchase Order.
-3. Setelah dokumen diubah menjadi draft barulah staff purchasing dapat merubah/mengupdate PO.
+1. Purchase Staff menginformasikan/menyampaikan kepada Purchase Chief/SPV/Staff yang diberikan hak untuk approval Revisi (Lebih baik melalui media tertulis).
+2. Chief/SPV akan membuka dokumen PO dengan cara mengklik tombol "Set to Draft".
+3. Otomatis PO akan berubah status nya menjadi "Draft", lalu staff dapat mengedit kembali PO pada ERP.
+
 
 .. _content_purchase_po_revision_approved:
 
@@ -88,7 +100,7 @@ Proses Revisi PO dibagi 3 menurut kejadiannya:
 
 1. :ref:`content_purchase_po_revision_approved_invoiced`
 2. :ref:`content_purchase_po_revision_approved_not_invoiced`
-3. :ref:`content_purchase_po_revision_non_approved`
+3. :ref:`content_purchase_po_revision_not_approved`
 
 .. _content_purchase_po_revision_approved_invoiced:
 
@@ -173,15 +185,3 @@ Setelah proses Approval maka Purchase Staff dapat merevisi PO dengan cara:
 2. Klik tombol "Create New Purchase Order". Setelah klik akan muncul PO dengan nomor REV. Pada PO tersebut silahkan edit dan revisi, lalu klik Tombol "Save" jika sudah selesai proses Editing.
 3. Confirm PO. Setelah diconfirm maka PO dapat di print untuk meminta persetujuan Oleh Purchase Manager.
 4. Jika disetujui maka Purchase Manager akan mentandatangani PO Revisi dan mengapprove PO di sistem ERP, dengan begitu PO dapat di proses selanjutnya. Jika sudah terjadi proses approval maka secara sistem dokumen PO versi lama akan berubah status menjadi "Cancel". Selain itu semua receiving yang sudah ada akan otomatis pindah ke dokumen PO versi Revisi.
-
-.. _content_purchase_po_revision_non_approved:
-
-Merevisi PO yang belum pernah di approval
------------------------------------------
-
-Untuk merevisi dokumen PO dimana proses nya **belum pernah di setujui oleh Purchase Manager**, artinya PO baru melalui proses **Confirm** oleh Staff Purchasing.
-Untuk merevisi diberlakukan flow:
-
-1. Purchase Staff menginformasikan/meminta by Email kepada Purchase Chief/SPV/Staff yang diberikan hak untuk approval Revisi. 
-2. Chief/SPV akan membuka dokumen PO dengan cara mengklik tombol "Set to Draft".
-3. Otomatis PO akan berubah status nya menjadi "Draft", lalu staff dapat mengedit kembali PO pada ERP.
