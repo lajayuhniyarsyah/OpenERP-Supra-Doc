@@ -21,27 +21,34 @@ Merelease PO
 Secara garis besar flow yang di terapkan dalam release PO adalah
 
 .. figure:: img/flow-1.png
-   :scale: 50%
+   :scale: 100%
    :alt: Flow Release Purchase Order
 
 Penjelasan:
 
 1. Input / Draft
+   
    Input dilakukan oleh Staff Purchasing. Selama draft print out yang akan berlaku adalah draft PO (terdapat watermark “Draft”)
+
+   Contoh Draft Print PO:
+
+   .. figure:: img/print-out-draft.png
+      :scale: 30%
+      :alt: Flow Revisi PO - Belum Approval
 2. Confirm & Print
-   Confirm dilakukan dengan mengklik “Confirm” dan setelah itu maka PO akan berubah statusnya menjadi “Waiting Approval”
-   Status Waiting Approval mengindikasikan bahwa draft PO sudah disubmit dan sedang dalam pengajuan ke Manager Purchase (Atau Management yang berhak mentandatangani/approval PO)
-   Jika PO yang di cetak tidak di approval maka Purchase Manger atau Bpk. Ary Ardianto (Staff Purchasing yang ditunjuk untuk berhak membuka PO menjadi Draft) dapat mengubah status PO menjadi draft dengan cara Klik tombol “Set to Draft”.
-3. Apporve
-   Pada saat PO ditandatangani maka Purchase Manager akan merubah Status PO di sistem menjadi “Purchase Order” dengan cara mengklik tombol “Approve Order”.
-   Status “Purchase Order” pada sistem mengindikasikan bahwa PO tersebut sudah di approval oleh Management dan sudah di proses release PO kepada supplier.
+   
+   Confirm dilakukan dengan mengklik “Confirm” dan setelah itu maka PO akan berubah statusnya menjadi “**Waiting Approval**”
+
+   Status Waiting Approval mengindikasikan bahwa draft PO sudah disubmit dan sedang dalam pengajuan ke Manager Purchase (Atau Management yang berhak mentandatangani/approval PO).
+
+   Jika PO yang di cetak tidak di approval maka Purchase Manger atau Bpk. Ary Ardianto (Staff Purchasing yang ditunjuk untuk berhak membuka PO menjadi Draft) dapat mengubah status PO menjadi draft dengan cara Klik tombol “**Set to Draft**”.
+3. Approve
+
+   Pada saat PO ditandatangani maka Purchase Manager akan merubah Status PO di sistem menjadi “Purchase Order” dengan cara mengklik tombol “**Approve Order**”.
+
+   Status “**Purchase Order**” pada sistem mengindikasikan bahwa PO tersebut sudah di approval oleh Management dan sudah di proses release PO kepada supplier.
 
 
-1. Purchase Staff menginput PO pada modul ERP
-2. Purchase Staff mengkonfirm PO untuk selanjutnya dapat di Print/Cetak
-3. Setelah PO di cetak maka staff purchase harus meminta tanda tangan Purchase Manager
-4. Purchase Manager mentandatangani PO dan meng-approve PO pada sistem ERP. Jika Purchase Manager berhalangan  untuk approval PO, maka PO akan ditandatangani oleh Finance Director (Ibu Susanti) dan untuk approval di sistem dapat diwakilkan oleh Purchase Chief/SPV/orang yang ditunjuk untuk approval di sistem ERP.
-5. PO dapat di release ke Supplier.
 
 .. _content_purchase_po_revision:
 
@@ -53,13 +60,19 @@ Merevisi PO
 Revisi PO yang belum di Approve/Belum Release
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Pada sub ini akan dijelaskan flow tata cara merevisi PO dimana PO tersebut belum pernah di approve / ditandatangani / disetujui oleh Manager (Pada sistem status nya masih **Waiting Approval**. 
-Pada kondisi ini juga revisi yang diberlakukan adalah revisi tanpa mengubah nomor dokumen.
+| Jika PO berstatus "**Waiting Approval**" maka artinya PO menunggu untuk di approve oleh Purchase Manager.
+| Terkadang ada kondisi Print PO yang diajukan tidak di approval (tidak ditandatangani oleh Purchase Manager), dengan alasan revisi kesalahan/penambahan item, dll yang pada intinya PO harus direvisi terlebih dahulu untuk kemudian disetujui/approve. 
+| Dengan kondisi tersebut maka Purchase Manager dapat membuka PO dengan cara mengklik tombol "**Set to Draft**". Tombol tersebut hanya dapat diakses oleh User yang berhak [#f_non_appr_rights]_.
+
+.. [#f_non_appr_rights]  Yang dapat melakukan perubahan dokumen menjadi draft adalah user yang terindikasi sebahai **Purchase Manager** dan **Purchase Chief** pada sistem ERP.
+
+
+
 
 Berikut ini adalah flow activity diagramnya:
 
 .. figure:: img/flow-revisi-draft.png
-   :scale: 50%
+   :scale: 80%
    :alt: Flow Revisi PO - Belum Approval
 
 Penjelasan:
@@ -79,7 +92,7 @@ PO yang sudah di approve / ditandatangani yang artinya sudah di setujui oleh Man
 Secara garis besar konsep revisi dapat digambarkan sbb:
 
 .. figure:: img/flow-revisi-1.png
-   :scale: 50%
+   :scale: 80%
    :alt: Garis besar konsep Revisi
 
 Penjelasan:
@@ -91,7 +104,7 @@ Penjelasan:
 Berikut ini adalah Use Case sistem dimana pada Use Case Diagram digambarkan proses-proses yang terjadi berserta actor/user yang melakukannya.:
 
 .. figure:: img/use-case-revisi-po.png
-   :scale: 50%
+   :scale: 90%
    :alt: Use Case Diagram Revisi PO
 
 
@@ -116,7 +129,7 @@ Berikut adalah tata cara flow merevisi PO yang sudah terproses invoice.
 Ask ("Meminta") adalah flow untuk meminta persetujuan untuk merevisi dokumen PO. Hal ini dilakukan oleh Purchase Staff. Cara nya adalah:
 
 .. figure:: img/flow-revisi-po-erp-1.png
-   :scale: 70%
+   :scale: 90%
    :alt: Flow Proses Revisi PO Invoiced oleh Purchase Staff
 
 2. Approve
@@ -139,7 +152,7 @@ Setelah proses Approval maka Purchase Staff dapat merevisi PO dengan cara:
 
 1. Buka menu PO to Revise
 	.. figure:: img/form-po-revise.png
-	   :scale: 70%
+	   :scale: 90%
 	   :alt: Form PO Revise
 2. Klik tombol "Create New Purchase Order". Setelah klik akan muncul PO dengan nomor REV. Pada PO tersebut silahkan edit dan revisi, lalu klik Tombol "Save" jika sudah selesai proses Editing.
 3. Confirm PO. Setelah diconfirm maka PO dapat di print untuk meminta persetujuan Oleh Purchase Manager.
